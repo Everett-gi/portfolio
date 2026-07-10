@@ -87,9 +87,11 @@
   /* ---------- máquina de escrever no cargo ---------- */
   var frases = [
     'Desenvolvedor Full Stack Jr',
-    'Segurança Ofensiva & Defensiva',
+    'Em busca de estágio em TI',
     'Java · Spring Boot · PostgreSQL',
-    'Presidente da Atlética Dragões'
+    'Front-end · React · JavaScript',
+    'Cloud · Docker · deploy próprio',
+    'Cibersegurança como diferencial'
   ];
   var maquina = document.getElementById('maquina');
 

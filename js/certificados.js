@@ -98,11 +98,11 @@
 
     { titulo: 'Leveraging AI for Hacking — Ethical Hacking', emissor: 'HackerX', area: 'ciber', ano: '2026',
       data: '27/01/2026', carga: 'Módulo', img: 'img/certificados/hackerx-ai-hacking.jpg',
-      detalhes: 'Uso de Inteligência Artificial aplicada à segurança ofensiva: automação de reconhecimento e análise — a interseção entre minhas duas áreas de estudo, IA e cibersegurança. Certificate ID: 2a71d0029ebff00.', link: '' },
+      detalhes: 'Uso de Inteligência Artificial aplicada à segurança ofensiva: automação de coleta e análise — a interseção entre minhas duas áreas de estudo, IA e cibersegurança. Certificate ID: 2a71d0029ebff00.', link: '' },
 
     { titulo: 'Prompt Guide for Hacking — Ethical Hacking', emissor: 'HackerX', area: 'ciber', ano: '2026',
       data: '27/01/2026', carga: 'Módulo', img: 'img/certificados/hackerx-prompt-guide.jpg',
-      detalhes: 'Engenharia de prompts aplicada a tarefas de segurança: como orientar modelos de IA para apoiar reconhecimento e análise de vulnerabilidades. Certificate ID: c2dbef3ae8559ec.', link: '' },
+      detalhes: 'Engenharia de prompts aplicada a tarefas de segurança: como orientar modelos de IA para apoiar a análise de vulnerabilidades. Certificate ID: c2dbef3ae8559ec.', link: '' },
 
     { titulo: 'Segurança em Tecnologia da Informação', emissor: 'Fundação Bradesco — Escola Virtual', area: 'ciber', ano: '2024',
       data: '26/02 a 02/03/2024', carga: '12h', img: 'img/certificados/bradesco-seguranca-ti.jpg',

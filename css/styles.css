@@ -381,6 +381,9 @@ section{padding:92px 0}
 .cap-nivel{display:flex;gap:4px;justify-content:flex-end}
 .cap-nivel i{width:16px;height:9px;background:var(--lilas-2);transform-origin:center}
 .cap-nivel i.on{background:var(--roxo)}
+.cap-destaque{background:var(--lilas)}
+.cap-destaque .cap-nome em{font-style:normal;font-family:var(--mono);font-size:.72rem;color:var(--roxo);font-weight:600}
+.cap-destaque .cap-id{color:var(--roxo-vivo)}
 /* efeito equalizador: as barras acesas dançam quando a linha recebe hover */
 .cap-linha:hover .cap-nivel i.on{animation:sinal .75s ease-in-out infinite}
 .cap-linha:hover .cap-nivel i:nth-child(1){animation-delay:0s}
