@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Arquivo de Credenciais — Anexo A · Gildean Monteiro</title>
+<meta name="description" content="Anexo A do dossiê GM-2026: arquivo completo de certificados de Gildean Monteiro, catalogados por área — Cibersegurança, Java, Python & IA, Front-end, Cloud e mais.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%236D28D9'/%3E%3Ctext x='16' y='23' font-family='monospace' font-size='19' font-weight='bold' fill='white' text-anchor='middle'%3EG%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Archivo:wght@500;600;700&family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<!-- faixa de classificação -->
+<div class="faixa" aria-hidden="true">
+  <div class="faixa-trilho">
+    <span class="faixa-bloco">ANEXO A ✦ ARQUIVO DE CREDENCIAIS ✦ REF: GM-2026-001 ✦ CLASSIFICAÇÃO: PÚBLICA ✦ CATALOGAÇÃO POR ÁREA DE ESTUDO ✦&nbsp;</span>
+    <span class="faixa-bloco">ANEXO A ✦ ARQUIVO DE CREDENCIAIS ✦ REF: GM-2026-001 ✦ CLASSIFICAÇÃO: PÚBLICA ✦ CATALOGAÇÃO POR ÁREA DE ESTUDO ✦&nbsp;</span>
+  </div>
+</div>
+
+<!-- ============ NAV ============ -->
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="logo scramble-hover">GM<span>—</span>2026<span>/</span>ANEXO·A</a>
+    <button class="hamburger" id="hamburger" aria-label="Abrir menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">← Voltar ao dossiê</a></li>
+      <li><a href="index.html#evidencias">Evidências</a></li>
+      <li><a href="index.html#contato" class="nav-cta">Contato</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- ============ ANEXO A — ARQUIVO DE CREDENCIAIS ============ -->
+<section class="arquivo" id="arquivo">
+  <div class="container">
+    <p class="secao-tag reveal">ANEXO A / ARQUIVO DE CREDENCIAIS</p>
+    <h2 class="titulo reveal">Todas as credenciais do alvo</h2>
+    <p class="cred-nota reveal">// catalogadas por área de estudo — filtre, busque ou vasculhe registro por registro</p>
+
+    <div class="arquivo-toolbar reveal">
+      <label class="busca" for="busca">
+        <span>grep&nbsp;-i</span>
+        <input id="busca" type="search" placeholder="buscar por nome ou emissor..." autocomplete="off">
+      </label>
+      <span class="arquivo-contagem" id="contagem">carregando registros…</span>
+    </div>
+
+    <div class="filtros filtros-areas reveal" id="filtrosArea" role="group" aria-label="Filtrar credenciais por área">
+      <button class="farea ativa" data-area="todas">[ TODAS ]</button>
+      <button class="farea" data-area="ciber">[ CIBERSEGURANÇA ]</button>
+      <button class="farea" data-area="java">[ JAVA &amp; BACK-END ]</button>
+      <button class="farea" data-area="python-ia">[ PYTHON &amp; IA ]</button>
+      <button class="farea" data-area="front">[ FRONT-END ]</button>
+      <button class="farea" data-area="cloud">[ CLOUD &amp; DEVOPS ]</button>
+      <button class="farea" data-area="redes">[ REDES &amp; INFRA ]</button>
+      <button class="farea" data-area="gestao">[ GESTÃO &amp; SOFT SKILLS ]</button>
+      <button class="farea" data-area="idiomas">[ IDIOMAS ]</button>
+    </div>
+
+    <div class="acred-grid" id="arquivoGrid" aria-live="polite"></div>
+    <p class="arquivo-vazio" id="arquivoVazio" hidden>// nenhum registro encontrado — ajuste o filtro ou a busca</p>
+    <noscript><p class="arquivo-vazio">O arquivo de credenciais precisa de JavaScript habilitado para ser exibido. As credenciais em destaque estão na <a href="index.html#credenciais">página principal do dossiê</a>.</p></noscript>
+
+    <div class="arquivo-rodape reveal">
+      <a class="btn btn-troca" href="index.html#credenciais">
+        <span class="rotulos"><span>← Voltar ao dossiê</span><span>fechar anexo A</span></span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ MODAL DE INSPEÇÃO ============ -->
+<dialog id="modalCred" class="modal-cred" aria-labelledby="modalTitulo">
+  <div class="modal-topo">
+    <span><span id="modalNum">CRED-000</span> · <span id="modalArea">ÁREA</span></span>
+    <button id="modalFechar" class="modal-fechar" aria-label="Fechar inspeção">[ X ]</button>
+  </div>
+  <div class="modal-img" id="modalImgWrap">
+    <img id="modalImg" alt="" hidden>
+    <p id="modalSemImg" class="modal-sem-img" hidden>// imagem original ainda não anexada ao dossiê</p>
+  </div>
+  <div class="modal-info">
+    <h3 id="modalTitulo"></h3>
+    <p class="modal-meta" id="modalMeta"></p>
+    <p class="modal-detalhes" id="modalDetalhes"></p>
+    <a id="modalLink" class="modal-verificar" href="#" target="_blank" rel="noopener" hidden>↗ verificar autenticidade na fonte</a>
+  </div>
+</dialog>
+
+<!-- ============ FOOTER ============ -->
+<footer>
+  <div class="footer-inner">
+    <span>— FIM DO ANEXO A —</span>
+    <span>REF: GM-2026-001 · © 2026 Gildean Monteiro do Nascimento</span>
+    <span>assinado: <a href="https://github.com/Everett-gi" target="_blank" rel="noopener">G. Monteiro</a></span>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+<script src="js/certificados.js"></script>
+</body>
+</html>
