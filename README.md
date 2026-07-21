@@ -13,14 +13,44 @@ gildean-portfolio/
 ├── css/
 │   └── styles.css       # identidade visual (tokens em :root)
 ├── js/
-│   ├── main.js          # scramble, tarjas, filtros, contadores, reveal
-│   └── certificados.js  # dados + filtros + busca do arquivo de credenciais
+│   ├── i18n.js          # idiomas (PT/EN/IT/FR): motor + dicionário da interface
+│   ├── main.js          # scramble, tarjas, filtros, contadores, reveal, typewriter
+│   └── certificados.js  # dados + filtros + busca do arquivo de certificados
 ├── vercel.json          # cleanUrls + cabeçalhos de segurança
 ├── .gitignore
 └── README.md
 ```
 
-## Como adicionar um certificado
+## Idiomas (PT · EN · IT · FR)
+
+O site troca de idioma sem recarregar, lembra a escolha (localStorage) e detecta o idioma do navegador na primeira visita. Todo texto traduzível no HTML usa um atributo `data-i18n*`:
+
+| Atributo            | Efeito                                    |
+| ------------------- | ----------------------------------------- |
+| `data-i18n`         | troca o texto (textContent)               |
+| `data-i18n-html`    | troca conteúdo com HTML (spans, `<br>`)   |
+| `data-i18n-ph`      | troca o `placeholder`                     |
+| `data-i18n-al`      | troca o `aria-label`                      |
+| `data-i18n-secret`  | troca o texto secreto da tarja preta      |
+| `data-i18n-title`   | troca o `<title>` da aba                  |
+| `data-i18n-desc`    | troca a meta description                  |
+
+Para ajustar qualquer texto, edite a chave correspondente nos **quatro** blocos de idioma (`pt`, `en`, `it`, `fr`) dentro de `js/i18n.js`. As frases da máquina de escrever ficam no objeto `FRASES` do mesmo arquivo.
+
+### Traduzir a descrição de um certificado
+
+No `js/certificados.js`, o campo `detalhes` aceita **string** (mesmo texto em todos os idiomas) **ou objeto** por idioma. Para traduzir, troque a string por um objeto:
+
+```js
+detalhes: {
+  pt: 'Texto em português.',
+  en: 'Text in English.',
+  it: 'Testo in italiano.',
+  fr: 'Texte en français.'
+},
+```
+
+Se um idioma faltar no objeto, o sistema usa o português automaticamente (fallback). Os campos visíveis do card — número, área, título e emissor — já se traduzem sozinhos (a área vem do dicionário).
 
 Abra `js/certificados.js` e copie uma linha do array `CREDENCIAIS`:
 

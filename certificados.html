@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Arquivo de Credenciais — Anexo A · Gildean Monteiro</title>
-<meta name="description" content="Anexo A do dossiê GM-2026: arquivo completo de certificados de Gildean Monteiro, catalogados por área — Cibersegurança, Java, Python & IA, Front-end, Cloud e mais.">
+<title data-i18n-title="cert.title">Arquivo de Certificados — Gildean Monteiro</title>
+<meta name="description" data-i18n-desc="cert.desc" content="Arquivo completo de certificados de Gildean Monteiro, catalogados por área de estudo.">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%236D28D9'/%3E%3Ctext x='16' y='23' font-family='monospace' font-size='19' font-weight='bold' fill='white' text-anchor='middle'%3EG%3C/text%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,11 +13,11 @@
 </head>
 <body>
 
-<!-- faixa de classificação -->
+<!-- faixa -->
 <div class="faixa" aria-hidden="true">
   <div class="faixa-trilho">
-    <span class="faixa-bloco">ARQUIVO DE CERTIFICADOS ✦ GILDEAN MONTEIRO ✦ MAIS DE 40 CERTIFICADOS ✦ CATALOGADOS POR ÁREA DE ESTUDO ✦&nbsp;</span>
-    <span class="faixa-bloco">ARQUIVO DE CERTIFICADOS ✦ GILDEAN MONTEIRO ✦ MAIS DE 40 CERTIFICADOS ✦ CATALOGADOS POR ÁREA DE ESTUDO ✦&nbsp;</span>
+    <span class="faixa-bloco" data-i18n="cert.faixa">ARQUIVO DE CERTIFICADOS ✦ GILDEAN MONTEIRO ✦ MAIS DE 40 CERTIFICADOS ✦ CATALOGADOS POR ÁREA DE ESTUDO ✦&nbsp;</span>
+    <span class="faixa-bloco" data-i18n="cert.faixa">ARQUIVO DE CERTIFICADOS ✦ GILDEAN MONTEIRO ✦ MAIS DE 40 CERTIFICADOS ✦ CATALOGADOS POR ÁREA DE ESTUDO ✦&nbsp;</span>
   </div>
 </div>
 
@@ -29,79 +29,88 @@
       <span></span><span></span><span></span>
     </button>
     <ul class="nav-links" id="navLinks">
-      <li><a href="index.html">← Voltar ao início</a></li>
-      <li><a href="index.html#evidencias">Projetos</a></li>
-      <li><a href="index.html#contato" class="nav-cta">Contato</a></li>
+      <li><a href="index.html" data-i18n="cert.back">← Voltar ao início</a></li>
+      <li><a href="index.html#evidencias" data-i18n="cert.projetos">Projetos</a></li>
+      <li><a href="index.html#contato" class="nav-cta" data-i18n="cert.contato">Contato</a></li>
+      <li>
+        <div class="lang-switch" role="group" data-i18n-al="switch.aria" aria-label="Selecionar idioma">
+          <button class="lang-btn" data-lang="pt" aria-pressed="true">PT</button>
+          <button class="lang-btn" data-lang="en" aria-pressed="false">EN</button>
+          <button class="lang-btn" data-lang="it" aria-pressed="false">IT</button>
+          <button class="lang-btn" data-lang="fr" aria-pressed="false">FR</button>
+        </div>
+      </li>
     </ul>
   </div>
 </nav>
 
-<!-- ============ ANEXO A — ARQUIVO DE CREDENCIAIS ============ -->
+<!-- ============ ARQUIVO ============ -->
 <section class="arquivo" id="arquivo">
   <div class="container">
-    <p class="secao-tag reveal">ANEXO A / ARQUIVO DE CREDENCIAIS</p>
-    <h2 class="titulo reveal">Todos os meus certificados</h2>
-    <p class="cred-nota reveal">// catalogadas por área de estudo — filtre, busque ou vasculhe registro por registro</p>
+    <p class="secao-tag reveal" data-i18n="arch.tag">ANEXO A / ARQUIVO DE CERTIFICADOS</p>
+    <h2 class="titulo reveal" data-i18n="arch.title">Todos os meus certificados</h2>
+    <p class="cred-nota reveal" data-i18n="arch.note">// catalogados por área de estudo — filtre ou busque por nome</p>
 
     <div class="arquivo-toolbar reveal">
       <label class="busca" for="busca">
         <span>grep&nbsp;-i</span>
-        <input id="busca" type="search" placeholder="buscar por nome ou emissor..." autocomplete="off">
+        <input id="busca" type="search" data-i18n-ph="arch.searchPh" placeholder="buscar por nome ou emissor..." autocomplete="off">
       </label>
-      <span class="arquivo-contagem" id="contagem">carregando registros…</span>
+      <span class="arquivo-contagem" id="contagem" data-i18n="arch.loading">carregando registros…</span>
     </div>
 
-    <div class="filtros filtros-areas reveal" id="filtrosArea" role="group" aria-label="Filtrar credenciais por área">
-      <button class="farea ativa" data-area="todas">[ TODAS ]</button>
-      <button class="farea" data-area="ciber">[ CIBERSEGURANÇA ]</button>
-      <button class="farea" data-area="java">[ JAVA &amp; BACK-END ]</button>
-      <button class="farea" data-area="python-ia">[ PYTHON &amp; IA ]</button>
-      <button class="farea" data-area="front">[ FRONT-END ]</button>
-      <button class="farea" data-area="cloud">[ CLOUD &amp; DEVOPS ]</button>
-      <button class="farea" data-area="redes">[ REDES &amp; INFRA ]</button>
-      <button class="farea" data-area="gestao">[ GESTÃO &amp; SOFT SKILLS ]</button>
-      <button class="farea" data-area="idiomas">[ IDIOMAS ]</button>
+    <div class="filtros filtros-areas reveal" id="filtrosArea" role="group" data-i18n-al="switch.aria" aria-label="Filtrar por área">
+      <button class="farea ativa" data-area="todas" data-i18n="farea.todas">[ TODAS ]</button>
+      <button class="farea" data-area="ciber" data-i18n="farea.ciber">[ CIBERSEGURANÇA ]</button>
+      <button class="farea" data-area="java" data-i18n="farea.java">[ JAVA &amp; BACK-END ]</button>
+      <button class="farea" data-area="python-ia" data-i18n="farea.python-ia">[ PYTHON &amp; IA ]</button>
+      <button class="farea" data-area="front" data-i18n="farea.front">[ FRONT-END ]</button>
+      <button class="farea" data-area="cloud" data-i18n="farea.cloud">[ CLOUD &amp; DEVOPS ]</button>
+      <button class="farea" data-area="redes" data-i18n="farea.redes">[ REDES &amp; INFRA ]</button>
+      <button class="farea" data-area="gestao" data-i18n="farea.gestao">[ GESTÃO &amp; SOFT SKILLS ]</button>
+      <button class="farea" data-area="idiomas" data-i18n="farea.idiomas">[ IDIOMAS ]</button>
     </div>
 
     <div class="acred-grid" id="arquivoGrid" aria-live="polite"></div>
-    <p class="arquivo-vazio" id="arquivoVazio" hidden>// nenhum registro encontrado — ajuste o filtro ou a busca</p>
-    <noscript><p class="arquivo-vazio">A lista de certificados precisa de JavaScript habilitado para ser exibida. Os certificados em destaque estão na <a href="index.html#credenciais">página principal</a>.</p></noscript>
+    <p class="arquivo-vazio" id="arquivoVazio" data-i18n="arch.empty" hidden>// nenhum registro encontrado — ajuste o filtro ou a busca</p>
+    <noscript><p class="arquivo-vazio">A lista de certificados precisa de JavaScript habilitado. Os certificados em destaque estão na <a href="index.html#credenciais">página principal</a>.</p></noscript>
 
     <div class="arquivo-rodape reveal">
       <a class="btn btn-troca" href="index.html#credenciais">
-        <span class="rotulos"><span>← Voltar ao início</span><span>voltar ao portfólio</span></span>
+        <span class="rotulos"><span data-i18n="arch.back">← Voltar ao início</span><span data-i18n="arch.backA">voltar ao portfólio</span></span>
       </a>
     </div>
   </div>
 </section>
 
-<!-- ============ MODAL DE INSPEÇÃO ============ -->
+<!-- ============ MODAL ============ -->
 <dialog id="modalCred" class="modal-cred" aria-labelledby="modalTitulo">
   <div class="modal-topo">
     <span><span id="modalNum">CRED-000</span> · <span id="modalArea">ÁREA</span></span>
-    <button id="modalFechar" class="modal-fechar" aria-label="Fechar inspeção">[ X ]</button>
+    <button id="modalFechar" class="modal-fechar" data-i18n-al="modal.closeA" aria-label="Fechar">[ X ]</button>
   </div>
   <div class="modal-img" id="modalImgWrap">
     <img id="modalImg" alt="" hidden>
-    <p id="modalSemImg" class="modal-sem-img" hidden>// imagem original ainda não anexada</p>
+    <p id="modalSemImg" class="modal-sem-img" data-i18n="modal.noImg" hidden>// imagem original ainda não anexada</p>
   </div>
   <div class="modal-info">
     <h3 id="modalTitulo"></h3>
     <p class="modal-meta" id="modalMeta"></p>
     <p class="modal-detalhes" id="modalDetalhes"></p>
-    <a id="modalLink" class="modal-verificar" href="#" target="_blank" rel="noopener" hidden>↗ verificar autenticidade na fonte</a>
+    <a id="modalLink" class="modal-verificar" href="#" target="_blank" rel="noopener" data-i18n="modal.verify" hidden>↗ verificar autenticidade na fonte</a>
   </div>
 </dialog>
 
 <!-- ============ FOOTER ============ -->
 <footer>
   <div class="footer-inner">
-    <span>— FIM DO ANEXO A —</span>
+    <span data-i18n="footer.end">— OBRIGADO PELA VISITA —</span>
     <span>REF: GM-2026-001 · © 2026 Gildean Monteiro do Nascimento</span>
-    <span>assinado: <a href="https://github.com/Everett-gi" target="_blank" rel="noopener">G. Monteiro</a></span>
+    <span><span data-i18n="footer.signed">assinado:</span> <a href="https://github.com/Everett-gi" target="_blank" rel="noopener">G. Monteiro</a></span>
   </div>
 </footer>
 
+<script src="js/i18n.js"></script>
 <script src="js/main.js"></script>
 <script src="js/certificados.js"></script>
 </body>

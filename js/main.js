@@ -84,8 +84,8 @@
     el.addEventListener('mouseenter', rodar);
   });
 
-  /* ---------- máquina de escrever no cargo ---------- */
-  var frases = [
+  /* ---------- máquina de escrever no cargo (reage ao idioma) ---------- */
+  var frasesFallback = [
     'Desenvolvedor Full Stack Jr',
     'Em busca de estágio em TI',
     'Java · Spring Boot · PostgreSQL',
@@ -93,36 +93,54 @@
     'Cloud · Docker · deploy próprio',
     'Cibersegurança como diferencial'
   ];
+  function obterFrases() {
+    return (window.i18n && typeof window.i18n.frases === 'function') ? window.i18n.frases() : frasesFallback;
+  }
   var maquina = document.getElementById('maquina');
+  var timerMaquina = null;
+  var geracao = 0;   // invalida loops antigos ao reiniciar
 
-  if (maquina) {
+  function iniciarMaquina(primeiraVez) {
+    if (!maquina) return;
+    var frases = obterFrases();
+
     if (semAnimacao) {
       maquina.textContent = frases[0];
-    } else {
-      var f = 0;
-      var pos = frases[0].length;   // começa apagando o texto já renderizado
-      var apagando = true;
-
-      var digitar = function () {
-        var atual = frases[f];
-        pos += apagando ? -1 : 1;
-        maquina.textContent = atual.slice(0, pos);
-
-        var espera = apagando ? 32 : 58;
-        if (!apagando && pos === atual.length) {
-          apagando = true;
-          espera = 2100;                       // pausa com a frase completa
-        } else if (apagando && pos === 0) {
-          apagando = false;
-          f = (f + 1) % frases.length;         // próxima frase, em loop
-          espera = 380;
-        }
-        setTimeout(digitar, espera);
-      };
-
-      setTimeout(digitar, 2400);               // espera o nome descriptografar
+      return;
     }
+
+    if (timerMaquina) { clearTimeout(timerMaquina); timerMaquina = null; }
+    var minhaGeracao = ++geracao;
+
+    var f = 0;
+    var pos = 0;
+    var apagando = false;
+    maquina.textContent = '';
+
+    var digitar = function () {
+      if (minhaGeracao !== geracao) return;   // um novo idioma assumiu: encerra
+      var atual = frases[f % frases.length];
+      pos += apagando ? -1 : 1;
+      maquina.textContent = atual.slice(0, pos);
+
+      var espera = apagando ? 32 : 58;
+      if (!apagando && pos === atual.length) {
+        apagando = true;
+        espera = 2100;                       // pausa com a frase completa
+      } else if (apagando && pos === 0) {
+        apagando = false;
+        f = (f + 1) % frases.length;         // próxima frase, em loop
+        espera = 380;
+      }
+      timerMaquina = setTimeout(digitar, espera);
+    };
+
+    timerMaquina = setTimeout(digitar, primeiraVez ? 2400 : 200);
   }
+
+  iniciarMaquina(true);
+  /* ao trocar de idioma, reinicia com as novas frases */
+  document.addEventListener('i18n:changed', function () { iniciarMaquina(false); });
 
   /* ---------- tarjas de redação (revelar ao toque) ---------- */
   document.querySelectorAll('.redacao').forEach(function (tarja) {

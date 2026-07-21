@@ -106,6 +106,23 @@ h1,h2,h3{color:var(--tinta);line-height:1.12}
   border:2px solid var(--tinta);
 }
 .nav-cta:hover{background:var(--roxo)!important;border-color:var(--roxo)}
+/* seletor de idioma */
+.lang-switch{display:flex;gap:0;border:1.5px solid var(--tinta);margin-left:6px}
+.lang-btn{
+  font-family:var(--mono);font-size:.72rem;font-weight:600;
+  padding:.34rem .5rem;cursor:pointer;
+  background:var(--papel);color:var(--texto);
+  border:none;border-right:1.5px solid var(--lilas-2);
+  transition:background .15s,color .15s;
+  line-height:1;
+}
+.lang-btn:last-child{border-right:none}
+.lang-btn:hover{background:var(--lilas);color:var(--tinta)}
+.lang-btn.ativo{background:var(--tinta);color:#fff}
+@media(max-width:900px){
+  .lang-switch{margin:0;border-top:1px solid var(--lilas-2);border-left:none;border-right:none;border-bottom:none}
+  .lang-btn{flex:1;padding:.7rem .5rem;border-right:1.5px solid var(--lilas-2);font-size:.8rem}
+}
 .hamburger{
   display:none;background:none;border:2px solid var(--tinta);cursor:pointer;
   width:42px;height:42px;
