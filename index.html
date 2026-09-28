@@ -3,483 +3,559 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title data-i18n-title="meta.title">Gildean Monteiro — Desenvolvedor Full Stack Jr & Cibersegurança</title>
-<meta name="description" data-i18n-desc="meta.desc" content="Portfólio de Gildean Monteiro do Nascimento — Desenvolvedor Full Stack Jr em busca de estágio em TI.">
-<meta property="og:title" content="Gildean Monteiro — Portfólio">
-<meta property="og:description" content="Dev Full Stack Jr · Cibersegurança · 2 sistemas em produção na nuvem.">
+<title data-i18n-title="meta.title">Gildean Monteiro · Desenvolvedor Full Stack Júnior (Java, Spring Boot, Cloud e Segurança)</title>
+<meta name="description" data-i18n-desc="meta.desc" content="Portfólio de Gildean Monteiro, desenvolvedor full stack júnior em Petrópolis (RJ). Java 21, Spring Boot, PostgreSQL, Docker, Oracle Cloud e cibersegurança, com uma plataforma em produção usada por mais de 80 alunos. Aberto a estágio e vagas júnior.">
+<meta name="author" content="Gildean Monteiro do Nascimento">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://portfolio-ten-livid-56.vercel.app/">
 <meta property="og:type" content="website">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%236D28D9'/%3E%3Ctext x='16' y='23' font-family='monospace' font-size='19' font-weight='bold' fill='white' text-anchor='middle'%3EG%3C/text%3E%3C/svg%3E">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:url" content="https://portfolio-ten-livid-56.vercel.app/">
+<meta property="og:site_name" content="Gildean Monteiro · Portfólio">
+<meta property="og:title" content="Gildean Monteiro · Desenvolvedor Full Stack Júnior">
+<meta property="og:description" content="Java, Spring Boot, PostgreSQL, Cloud e cibersegurança. Plataforma em produção com 80+ usuários e aberto a estágio ou vaga júnior.">
+<meta property="og:image" content="https://portfolio-ten-livid-56.vercel.app/img/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#0a0807">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%230a0807'/%3E%3Ctext x='16' y='23' font-family='Georgia,serif' font-style='italic' font-size='21' fill='%23ff6a4d' text-anchor='middle'%3Eg%3C/text%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Archivo:wght@500;600;700&family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/styles.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Gildean Monteiro do Nascimento",
+  "jobTitle": "Desenvolvedor Full Stack Júnior",
+  "url": "https://portfolio-ten-livid-56.vercel.app/",
+  "email": "mailto:gmonteiro0808@gmail.com",
+  "address": { "@type": "PostalAddress", "addressLocality": "Petrópolis", "addressRegion": "RJ", "addressCountry": "BR" },
+  "alumniOf": [{ "@type": "CollegeOrUniversity", "name": "FAETERJ Petrópolis" }, { "@type": "Organization", "name": "Serratec" }],
+  "knowsAbout": ["Java", "Spring Boot", "PostgreSQL", "Docker", "Oracle Cloud", "Cibersegurança", "OWASP Top 10", "LGPD"],
+  "sameAs": ["https://www.linkedin.com/in/gm-nascimento", "https://github.com/Everett-gi"]
+}
+</script>
 </head>
 <body>
 
-<!-- faixa -->
-<div class="faixa" aria-hidden="true">
-  <div class="faixa-trilho">
-    <span class="faixa-bloco" data-i18n="faixa">PERFIL PROFISSIONAL ✦ REF: GM-2026 ✦ GILDEAN MONTEIRO ✦ DESENVOLVEDOR FULL STACK JR ✦ EM BUSCA DE ESTÁGIO EM TI ✦ DISPONÍVEL ✦&nbsp;</span>
-    <span class="faixa-bloco" data-i18n="faixa">PERFIL PROFISSIONAL ✦ REF: GM-2026 ✦ GILDEAN MONTEIRO ✦ DESENVOLVEDOR FULL STACK JR ✦ EM BUSCA DE ESTÁGIO EM TI ✦ DISPONÍVEL ✦&nbsp;</span>
-  </div>
-</div>
+<a class="pular" href="#conteudo" data-i18n="skip">Pular para o conteúdo</a>
 
 <!-- ============ NAV ============ -->
-<nav class="nav">
-  <div class="nav-inner">
-    <a href="#topo" class="logo scramble-hover">GM<span>—</span>2026<span>/</span>DEV</a>
-    <button class="hamburger" id="hamburger" aria-label="Abrir menu" aria-expanded="false">
-      <span></span><span></span><span></span>
-    </button>
-    <ul class="nav-links" id="navLinks">
-      <li><a href="#perfil" data-i18n="nav.perfil">01·Perfil</a></li>
-      <li><a href="#resumo" data-i18n="nav.resumo">02·Resumo</a></li>
-      <li><a href="#capacidades" data-i18n="nav.capacidades">03·Capacidades</a></li>
-      <li><a href="#credenciais" data-i18n="nav.credenciais">04·Credenciais</a></li>
-      <li><a href="#evidencias" data-i18n="nav.projetos">05·Projetos</a></li>
-      <li><a href="#atividade" data-i18n="nav.atividade">06·Trajetória</a></li>
-      <li><a href="#contato" class="nav-cta" data-i18n="nav.contato">07·Contato</a></li>
-      <li>
-        <div class="lang-switch" role="group" data-i18n-al="switch.aria" aria-label="Selecionar idioma">
-          <button class="lang-btn" data-lang="pt" aria-pressed="true">PT</button>
-          <button class="lang-btn" data-lang="en" aria-pressed="false">EN</button>
-          <button class="lang-btn" data-lang="it" aria-pressed="false">IT</button>
-          <button class="lang-btn" data-lang="fr" aria-pressed="false">FR</button>
-        </div>
-      </li>
-    </ul>
-  </div>
+<nav class="nav" aria-label="Navegação principal" data-i18n-al="nav.aria">
+  <a href="#inicio" class="nav-link ativo" data-i18n="nav.inicio">Início</a>
+  <a href="#sobre" class="nav-link nav-some" data-i18n="nav.sobre">Sobre</a>
+  <a href="#habilidades" class="nav-link nav-some" data-i18n="nav.habilidades">Habilidades</a>
+  <a href="#projetos" class="nav-link nav-some" data-i18n="nav.projetos">Projetos</a>
+  <a href="#trajetoria" class="nav-link nav-some" data-i18n="nav.trajetoria">Trajetória</a>
+  <a href="#faq" class="nav-link nav-some" data-i18n="nav.faq">FAQ</a>
+  <span class="nav-sep nav-some" aria-hidden="true"></span>
+  <button type="button" class="nav-lang" id="trocaIdioma" data-i18n="nav.lang" data-i18n-al="nav.langAria" aria-label="Ver em inglês">EN</button>
+  <a href="#contato" class="nav-cta">
+    <svg viewBox="0 0 24 24" width="15" height="15" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.4.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.8 11.9 11.9 0 0 0 4.6 4c1.7.7 2.4.8 3.2.7.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.1-1.2l-.5-.2Z"/></svg>
+    <span data-i18n="nav.cta">Falar comigo</span>
+  </a>
 </nav>
 
-<!-- ============ SEÇÃO 01 ============ -->
-<header class="perfil" id="topo">
-  <div class="container perfil-grid" id="perfil">
-    <div class="perfil-titulo">
-      <p class="secao-tag" data-i18n="s1.tag">SEÇÃO 01 / PERFIL PROFISSIONAL</p>
-      <h1 class="nome">
-        <span class="scramble" data-texto="GILDEAN">GILDEAN</span><br>
-        <span class="scramble" data-texto="MONTEIRO">MONTEIRO</span>
-      </h1>
-      <p class="funcao">
-        <span class="sr-only" data-i18n="hero.srRole">Desenvolvedor Full Stack Jr em busca de estágio em TI</span>
-        <span aria-hidden="true"><span id="maquina">Desenvolvedor Full Stack Jr</span><span class="caret"></span></span>
-      </p>
-      <p class="tese" data-i18n-html="hero.tese">
-        Desenvolvedor full stack júnior que <span class="marca">constrói e mantém sistemas reais em produção</span>
-        — do banco de dados ao deploy na nuvem — com boas práticas de segurança em cada camada.
-        <span class="marca">Em busca de uma oportunidade de estágio em TI</span> para aprender rápido e somar ao time.
-      </p>
-      <div class="perfil-acoes">
-        <a class="btn btn-cheio btn-troca" href="https://github.com/Everett-gi" target="_blank" rel="noopener">
-          <span class="rotulos"><span data-i18n="btn.github">↗ GitHub</span><span data-i18n="btn.githubA">ver meus projetos</span></span>
-        </a>
-        <a class="btn btn-troca" href="https://www.linkedin.com/in/gm-nascimento" target="_blank" rel="noopener">
-          <span class="rotulos"><span data-i18n="btn.linkedin">↗ LinkedIn</span><span data-i18n="btn.linkedinA">ver meu perfil</span></span>
-        </a>
-        <a class="btn btn-troca" href="#contato">
-          <span class="rotulos"><span data-i18n="btn.contato">Entrar em contato</span><span data-i18n="btn.contatoA">vamos conversar →</span></span>
-        </a>
+<main id="conteudo">
+
+  <!-- ============ HERO ============ -->
+  <header id="inicio" class="hero">
+    <div class="hero-orbes" aria-hidden="true"><span class="orbe orbe-1"></span><span class="orbe orbe-2"></span></div>
+    <div class="hero-brilho" aria-hidden="true"></div>
+
+    <div class="container">
+      <div class="hero-topo">
+        <span class="selo-disponivel">
+          <span class="selo-status"><span class="pulso"></span><span data-i18n="hero.avail">Disponível</span></span>
+          <span data-i18n="hero.badge">Aberto a estágio e vagas júnior em 2026</span>
+        </span>
+        <span class="mono-rotulo" data-i18n="hero.local">Petrópolis · RJ, Brasil · presencial, híbrido ou remoto</span>
       </div>
-    </div>
 
-    <div class="ficha-wrap">
-      <div class="carimbo" aria-hidden="true">
-        <span data-i18n="stamp.l1">BUSCA ESTÁGIO</span>
-        <small data-i18n="stamp.l2">EM TI · DISPONÍVEL</small>
-      </div>
-      <div class="ficha">
-        <div class="ficha-topo" data-i18n="ficha.top">FICHA PROFISSIONAL — GILDEAN MONTEIRO</div>
-        <dl class="ficha-corpo">
-          <div class="meta"><dt data-i18n="ficha.nome">NOME</dt><span class="pontos"></span><dd>Gildean M. do Nascimento</dd></div>
-          <div class="meta"><dt data-i18n="ficha.usuario">USUÁRIO</dt><span class="pontos"></span><dd data-extra=" [GitHub]">Everett-gi</dd></div>
-          <div class="meta"><dt data-i18n="ficha.base">BASE</dt><span class="pontos"></span><dd data-extra=" · GMT-3" data-i18n="ficha.baseVal">Petrópolis — RJ, Brasil</dd></div>
-          <div class="meta"><dt data-i18n="ficha.formacao">FORMAÇÃO</dt><span class="pontos"></span><dd data-i18n="ficha.formacaoVal">TIC — FAETERJ (em curso)</dd></div>
-          <div class="meta"><dt data-i18n="ficha.objetivo">OBJETIVO</dt><span class="pontos"></span><dd data-i18n="ficha.objetivoVal">Estágio em TI</dd></div>
-          <div class="meta"><dt data-i18n="ficha.dif">DIFERENCIAL</dt><span class="pontos"></span><dd data-extra=" · OWASP Top 10" data-i18n="ficha.difVal">Cibersegurança — HackerX</dd></div>
-          <div class="meta"><dt data-i18n="ficha.idiomas">IDIOMAS</dt><span class="pontos"></span><dd data-i18n="ficha.idiomasVal">PT nativo · EN C2 · IT A1</dd></div>
-          <div class="meta"><dt data-i18n="ficha.status">STATUS</dt><span class="pontos"></span><dd class="status-ativo"><i></i><span data-i18n="ficha.statusVal">DISPONÍVEL — aberto a propostas</span></dd></div>
-          <div class="meta">
-            <dt data-i18n="ficha.curio">CURIOSIDADE</dt><span class="pontos"></span>
-            <dd><button class="redacao" data-i18n-secret="ficha.secret" data-segredo="não recusa desafio técnico" aria-label="Revelar">██████████████</button></dd>
-          </div>
-        </dl>
-        <div class="ficha-rodape" data-i18n="ficha.rodape">// toque na tarja preta para revelar</div>
-      </div>
-    </div>
-  </div>
-</header>
+      <div class="hero-grid">
+        <div>
+          <p class="hero-tag"><span class="destaque" data-i18n="hero.tagL">Estágio · Dev júnior · Segurança</span><span class="traco" aria-hidden="true"></span><span>Java · Spring · Cloud</span></p>
 
-<!-- ============ SEÇÃO 02 ============ -->
-<section class="resumo" id="resumo">
-  <div class="container">
-    <p class="secao-tag reveal" data-i18n="s2.tag">SEÇÃO 02 / RESUMO PROFISSIONAL</p>
-    <h2 class="titulo reveal" data-i18n="s2.title">Quem eu sou</h2>
-    <div class="resumo-grid">
-      <div class="resumo-texto reveal">
-        <p data-i18n-html="s2.p1">Sou desenvolvedor full stack júnior e graduando em <span class="marca">TIC pela FAETERJ</span>.</p>
-        <p data-i18n-html="s2.p2">Antes da TI, já lidava com pressão e trabalho em equipe.</p>
-        <p data-i18n-html="s2.p3">No lado técnico, tenho projetos <span class="marca">reais rodando em produção</span>.</p>
-        <p class="veredito" data-i18n="s2.veredito">OBJETIVO: primeira oportunidade de estágio em TI.</p>
-      </div>
-      <div class="indicadores">
-        <div class="indicador reveal"><b data-contar="2" data-pad="2">02</b><span data-i18n-html="ind.prod">sistemas em produção<br>AWS &amp; Oracle Cloud</span></div>
-        <div class="indicador reveal"><b data-contar="40" data-sufixo="+">40+</b><span data-i18n-html="ind.certs">certificados<br>em várias áreas de TI</span></div>
-        <div class="indicador reveal"><b data-contar="700" data-sufixo="+">700+</b><span data-i18n-html="ind.clientes">clientes/dia geridos<br>sob pressão</span></div>
-        <div class="indicador reveal"><b>C2</b><span data-i18n-html="ind.ingles">inglês proficiente<br>certificado EF SET</span></div>
-      </div>
-    </div>
-  </div>
-</section>
+          <h1 class="hero-titulo" data-i18n="hero.h1">Desenvolvedor Full Stack que constrói, <em>protege</em> e mantém sistemas reais no ar.</h1>
 
-<!-- ============ SEÇÃO 03 ============ -->
-<section id="capacidades">
-  <div class="container">
-    <p class="secao-tag reveal" data-i18n="s3.tag">SEÇÃO 03 / COMPETÊNCIAS TÉCNICAS</p>
-    <h2 class="titulo reveal" data-i18n="s3.title">O que eu sei fazer</h2>
-    <div class="tabela-cap reveal" role="table" aria-label="Competências técnicas">
-      <div class="cap-linha cap-cabecalho" role="row">
-        <span role="columnheader" data-i18n="s3.hId">ID</span>
-        <span role="columnheader" data-i18n="s3.hCap">CAPACIDADE</span>
-        <span role="columnheader" data-i18n="s3.hDet">DETALHE</span>
-        <span role="columnheader" data-i18n="s3.hSig">SINAL</span>
-      </div>
-      <div class="cap-linha" role="row">
-        <span class="cap-id" role="cell">CAP-01</span>
-        <span class="cap-nome" role="cell" data-i18n="cap1.n">Back-end Java</span>
-        <span class="cap-det" role="cell" data-i18n="cap1.d">Java 21, Spring Boot, APIs REST, JWT/BCrypt e Flyway.</span>
-        <span class="cap-nivel" role="cell" aria-label="4/5"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i></i></span>
-      </div>
-      <div class="cap-linha" role="row">
-        <span class="cap-id" role="cell">CAP-02</span>
-        <span class="cap-nome" role="cell" data-i18n="cap2.n">Front-end & PWA</span>
-        <span class="cap-det" role="cell" data-i18n="cap2.d">HTML, CSS e JavaScript, React e PWA.</span>
-        <span class="cap-nivel" role="cell" aria-label="3/5"><i class="on"></i><i class="on"></i><i class="on"></i><i></i><i></i></span>
-      </div>
-      <div class="cap-linha" role="row">
-        <span class="cap-id" role="cell">CAP-03</span>
-        <span class="cap-nome" role="cell" data-i18n="cap3.n">Banco de dados — PostgreSQL</span>
-        <span class="cap-det" role="cell" data-i18n="cap3.d">Modelagem, schema versionado, índices e pgvector.</span>
-        <span class="cap-nivel" role="cell" aria-label="4/5"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i></i></span>
-      </div>
-      <div class="cap-linha" role="row">
-        <span class="cap-id" role="cell">CAP-04</span>
-        <span class="cap-nome" role="cell" data-i18n="cap4.n">Cloud & DevOps</span>
-        <span class="cap-det" role="cell" data-i18n="cap4.d">Deploy em AWS EC2 e Oracle Cloud com Docker, Caddy, Git.</span>
-        <span class="cap-nivel" role="cell" aria-label="3/5"><i class="on"></i><i class="on"></i><i class="on"></i><i></i><i></i></span>
-      </div>
-      <div class="cap-linha" role="row">
-        <span class="cap-id" role="cell">CAP-05</span>
-        <span class="cap-nome" role="cell" data-i18n="cap5.n">Python & IA</span>
-        <span class="cap-det" role="cell" data-i18n="cap5.d">FastAPI, LLMs, RAG com embeddings e automação.</span>
-        <span class="cap-nivel" role="cell" aria-label="3/5"><i class="on"></i><i class="on"></i><i class="on"></i><i></i><i></i></span>
-      </div>
-      <div class="cap-linha cap-destaque" role="row">
-        <span class="cap-id" role="cell">CAP-06 ★</span>
-        <span class="cap-nome" role="cell" data-i18n-html="cap6.n">Cibersegurança <em>(diferencial)</em></span>
-        <span class="cap-det" role="cell" data-i18n="cap6.d">Certificação HackerX: Pentest web, OSINT, criptografia.</span>
-        <span class="cap-nivel" role="cell" aria-label="4/5"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i></i></span>
-      </div>
-      <div class="cap-linha" role="row">
-        <span class="cap-id" role="cell">CAP-07</span>
-        <span class="cap-nome" role="cell" data-i18n="cap7.n">Trabalho em equipe & comunicação</span>
-        <span class="cap-det" role="cell" data-i18n="cap7.d">Gestão de operação de alto volume e liderança estudantil.</span>
-        <span class="cap-nivel" role="cell" aria-label="5/5"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></span>
-      </div>
-      <div class="cap-linha" role="row">
-        <span class="cap-id" role="cell">CAP-08</span>
-        <span class="cap-nome" role="cell" data-i18n="cap8.n">Resolução de problemas</span>
-        <span class="cap-det" role="cell" data-i18n="cap8.d">Depuração em produção, raciocínio estruturado, decisão sob pressão.</span>
-        <span class="cap-nivel" role="cell" aria-label="4/5"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i></i></span>
-      </div>
-    </div>
-  </div>
-</section>
+          <p class="hero-bio" data-i18n="hero.bio">
+            Estudante de TIC na FAETERJ e responsável pelo <strong>Hub Atlética Dragões</strong>, plataforma em produção com
+            Java 21, Spring Boot, PostgreSQL e <strong>1.275 testes automatizados</strong>. Certificado em <strong>Ethical Hacking</strong>
+            e em formação no <strong>Hackers do Bem</strong>. Procuro um estágio ou vaga júnior para somar ao time e aprender rápido.
+          </p>
 
-<!-- ============ SEÇÃO 04 ============ -->
-<section class="credenciais" id="credenciais">
-  <div class="container">
-    <p class="secao-tag reveal" data-i18n="s4.tag">SEÇÃO 04 / CREDENCIAIS VERIFICADAS</p>
-    <h2 class="titulo reveal" data-i18n="s4.title">Meus certificados</h2>
-    <p class="cred-nota reveal" data-i18n="s4.note">// passe o mouse para inspecionar o selo</p>
-    <div class="cred-grid">
-
-      <article class="cred reveal">
-        <div class="cred-selo" aria-hidden="true">✓</div>
-        <div class="cred-cabecalho">CREDENCIAL 01 <span class="tag tag-prod" data-i18n="tag.emitida">EMITIDA</span></div>
-        <h3 class="scramble-hover">Ethical Hacking</h3>
-        <p class="cred-emissor">HackerX</p>
-        <p class="cred-desc" data-i18n="cred1.d">Pentest web (OWASP Top 10), OSINT, análise de vulnerabilidades, redes e protocolos, criptografia.</p>
-        <div class="cred-rodape">
-          <span class="cred-data">02/2025 → 03/2026</span>
-          <a href="https://www.linkedin.com/in/gm-nascimento" target="_blank" rel="noopener" data-i18n="cred.verify">↗ verificar</a>
-        </div>
-      </article>
-
-      <article class="cred reveal">
-        <div class="cred-selo" aria-hidden="true">✓</div>
-        <div class="cred-cabecalho">CREDENCIAL 02 <span class="tag tag-prod" data-i18n="tag.emitida">EMITIDA</span></div>
-        <h3 class="scramble-hover" data-i18n="cred2.t">Residência em TIC</h3>
-        <p class="cred-emissor">Serratec — Petrópolis, RJ</p>
-        <p class="cred-desc" data-i18n="cred2.d">Imersão em IA, IoT, Python e Cloud, com foco em segurança.</p>
-        <div class="cred-rodape">
-          <span class="cred-data">05/2025 → 07/2025</span>
-          <a href="https://www.linkedin.com/in/gm-nascimento" target="_blank" rel="noopener" data-i18n="cred.verify">↗ verificar</a>
-        </div>
-      </article>
-
-      <article class="cred reveal">
-        <div class="cred-selo" aria-hidden="true">✓</div>
-        <div class="cred-cabecalho">CREDENCIAL 03 <span class="tag tag-done" data-i18n="tag.concluida">CONCLUÍDA</span></div>
-        <h3 class="scramble-hover">Oracle Next Education</h3>
-        <p class="cred-emissor">Oracle + Alura</p>
-        <p class="cred-desc" data-i18n="cred3.d">Lógica de programação e front-end com JavaScript, HTML e CSS.</p>
-        <div class="cred-rodape">
-          <span class="cred-data" data-i18n="cred3.data">PROGRAMA ONE</span>
-          <a href="https://github.com/Everett-gi" target="_blank" rel="noopener" data-i18n="cred.verify">↗ verificar</a>
-        </div>
-      </article>
-
-      <article class="cred reveal">
-        <div class="cred-selo" aria-hidden="true">✓</div>
-        <div class="cred-cabecalho">CREDENCIAL 04 <span class="tag tag-dev" data-i18n="tag.emcurso">EM CURSO</span></div>
-        <h3 class="scramble-hover" data-i18n="cred4.t">Graduação em TIC</h3>
-        <p class="cred-emissor">FAETERJ — Petrópolis, RJ</p>
-        <p class="cred-desc" data-i18n="cred4.d">TIC: redes, integração de sistemas, servidores e tecnologias emergentes.</p>
-        <div class="cred-rodape">
-          <span class="cred-data" data-i18n="cred4.data">03/2024 → atual</span>
-          <a href="https://www.linkedin.com/in/gm-nascimento" target="_blank" rel="noopener" data-i18n="cred.verify">↗ verificar</a>
-        </div>
-      </article>
-
-      <article class="cred reveal">
-        <div class="cred-selo" aria-hidden="true">✓</div>
-        <div class="cred-cabecalho">CREDENCIAL 05 <span class="tag tag-prod" data-i18n="tag.emitida">EMITIDA</span></div>
-        <h3 class="scramble-hover">EF SET English Certificate</h3>
-        <p class="cred-emissor">EF Standard English Test</p>
-        <p class="cred-desc" data-i18n="cred5.d">Inglês 82/100 — C2 Proficient na escala CEFR. Leitura e audição avaliadas.</p>
-        <div class="cred-rodape">
-          <span class="cred-data">04/2024 · C2</span>
-          <a href="https://www.linkedin.com/in/gm-nascimento" target="_blank" rel="noopener" data-i18n="cred.verify">↗ verificar</a>
-        </div>
-      </article>
-
-      <article class="cred cred-slot reveal">
-        <div class="cred-cabecalho" data-i18n="slot.anexo">ANEXO A</div>
-        <p class="cred-aguarde" data-i18n="slot.title">arquivo completo de certificados</p>
-        <p class="cred-slot-sub" data-i18n="slot.sub">// 40+ certificados catalogados por área — e contando</p>
-        <a class="btn btn-troca cred-slot-btn" href="certificados.html">
-          <span class="rotulos"><span data-i18n="slot.btn">↗ Ver todos os certificados</span><span data-i18n="slot.btnA">abrir arquivo completo →</span></span>
-        </a>
-      </article>
-
-    </div>
-  </div>
-</section>
-
-<!-- ============ SEÇÃO 05 ============ -->
-<section class="evidencias" id="evidencias">
-  <div class="container">
-    <p class="secao-tag reveal" data-i18n="s5.tag">SEÇÃO 05 / PROJETOS</p>
-    <h2 class="titulo reveal" data-i18n="s5.title">Código rodando no mundo real</h2>
-    <div class="ev-grid">
-
-      <article class="ev reveal">
-        <div class="ev-topo"><span>PROJETO 01 · hub-atletica</span><span class="tag tag-prod" data-i18n="tag.prod">EM PRODUÇÃO</span></div>
-        <span class="ev-selo" aria-hidden="true" data-i18n="proj.selo">VER MAIS ✓</span>
-        <div class="ev-corpo">
-          <h3 class="scramble-hover">Hub Atlética Dragões</h3>
-          <p data-i18n="proj1.d">PWA completo para os estudantes de TIC da FAETERJ, com deploy em AWS.</p>
-          <ul class="ev-stack">
-            <li>Spring Boot 3.5</li><li>PostgreSQL 15</li><li>Docker</li><li>AWS EC2</li><li>Caddy</li><li>PWA</li>
-          </ul>
-          <div class="ev-links"><span class="privado" data-i18n="proj1.link">🔒 Repositório privado — demo sob demanda</span></div>
-        </div>
-      </article>
-
-      <article class="ev reveal">
-        <div class="ev-topo"><span>PROJETO 02 · omnirate</span><span class="tag tag-prod" data-i18n="tag.prod">EM PRODUÇÃO</span></div>
-        <span class="ev-selo" aria-hidden="true" data-i18n="proj.selo">VER MAIS ✓</span>
-        <div class="ev-corpo">
-          <h3 class="scramble-hover">OmniRate</h3>
-          <p data-i18n="proj2.d">Plataforma unificada de avaliação de cultura pop, na Oracle Cloud.</p>
-          <ul class="ev-stack">
-            <li>Java 21</li><li>Spring Boot</li><li>React 18</li><li>PostgreSQL</li><li>Docker</li><li>Oracle Cloud</li>
-          </ul>
-          <div class="ev-links"><a href="https://omnirate.duckdns.org" target="_blank" rel="noopener" data-i18n="proj2.link">↗ Ver ao vivo</a></div>
-        </div>
-      </article>
-
-      <article class="ev reveal">
-        <div class="ev-topo"><span>PROJETO 03 · docsage</span><span class="tag tag-dev" data-i18n="tag.dev">EM DESENVOLVIMENTO</span></div>
-        <span class="ev-selo" aria-hidden="true" data-i18n="proj.selo">VER MAIS ✓</span>
-        <div class="ev-corpo">
-          <h3 class="scramble-hover">DocSage</h3>
-          <p data-i18n="proj3.d">Aplicação RAG com busca semântica e API da Anthropic.</p>
-          <ul class="ev-stack">
-            <li>Python</li><li>FastAPI</li><li>pgvector</li><li>RAG</li><li>IA</li>
-          </ul>
-          <div class="ev-links"><a href="https://github.com/Everett-gi" target="_blank" rel="noopener" data-i18n="proj3.link">↗ GitHub</a></div>
-        </div>
-      </article>
-
-      <article class="ev reveal">
-        <div class="ev-topo"><span>PROJETO 04 · secsuite</span><span class="tag tag-plan" data-i18n="tag.plan">ROADMAP</span></div>
-        <span class="ev-selo" aria-hidden="true" data-i18n="proj.selo">VER MAIS ✓</span>
-        <div class="ev-corpo">
-          <h3 class="scramble-hover">SecSuite</h3>
-          <p data-i18n="proj4.d">Suíte de segurança em Java com projetos interligados.</p>
-          <ul class="ev-stack">
-            <li>Java</li><li>Spring Security</li><li>PostgreSQL</li><li>GitHub Actions</li><li>DevSecOps</li>
-          </ul>
-          <div class="ev-links"><a href="https://github.com/Everett-gi" target="_blank" rel="noopener" data-i18n="proj4.link">↗ Acompanhar no GitHub</a></div>
-        </div>
-      </article>
-
-      <article class="ev reveal">
-        <div class="ev-topo"><span>PROJETO 05 · ping-pong</span><span class="tag tag-done" data-i18n="tag.done">CONCLUÍDO</span></div>
-        <span class="ev-selo" aria-hidden="true" data-i18n="proj.selo">VER MAIS ✓</span>
-        <div class="ev-corpo">
-          <h3 class="scramble-hover">Ping-Pong</h3>
-          <p data-i18n="proj5.d">Recriação do clássico em JavaScript puro, sem frameworks.</p>
-          <ul class="ev-stack">
-            <li>JavaScript</li><li>Canvas</li><li>HTML</li><li>CSS</li>
-          </ul>
-          <div class="ev-links"><a href="https://github.com/Everett-gi/Ping-Pong" target="_blank" rel="noopener" data-i18n="proj5.link">↗ Ver código</a></div>
-        </div>
-      </article>
-
-      <article class="ev reveal">
-        <div class="ev-topo"><span>PROJETO 06 · desafios-one</span><span class="tag tag-done" data-i18n="tag.done">CONCLUÍDO</span></div>
-        <span class="ev-selo" aria-hidden="true" data-i18n="proj.selo">VER MAIS ✓</span>
-        <div class="ev-corpo">
-          <h3 class="scramble-hover" data-i18n="proj6.t">Desafios ONE — Oracle</h3>
-          <p data-i18n="proj6.d">Projetos do programa Oracle Next Education com a Alura.</p>
-          <ul class="ev-stack">
-            <li>JavaScript</li><li>HTML</li><li>CSS</li><li>Lógica</li>
-          </ul>
-          <div class="ev-links">
-            <a href="https://github.com/Everett-gi/ONE-jogoDoNumeroSecreto" target="_blank" rel="noopener" data-i18n="proj6.link1">↗ Número Secreto</a>
-            <a href="https://github.com/Everett-gi/ONE-challengeAmigoSecreto" target="_blank" rel="noopener" data-i18n="proj6.link2">↗ Amigo Secreto</a>
+          <div class="hero-acoes">
+            <a class="btn btn-brand" href="curriculo/Gildean_Monteiro_Curriculo.pdf" download data-i18n-href="hero.cvHref">
+              <span data-i18n="hero.cta1">Baixar currículo (PDF)</span>
+              <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M12 4v12m0 0 5-5m-5 5-5-5M5 20h14"/></svg>
+            </a>
+            <a class="btn btn-ghost" href="#projetos" data-i18n="hero.cta2">Ver projetos</a>
           </div>
         </div>
-      </article>
 
+        <!-- Para mostrar sua foto: salve em img/perfil.jpg e preencha data-foto="img/perfil.jpg" -->
+        <div class="retrato" data-foto="">
+          <div class="retrato-arte" aria-hidden="true">
+            <span class="retrato-grade"></span>
+            <span class="retrato-mono">g<em>m</em></span>
+            <span class="retrato-codigo">&lt;dev fullstack=<b>"java"</b> seguranca=<b>"sim"</b> /&gt;</span>
+          </div>
+          <span class="chip chip-1"><span class="ponto"></span><span data-i18n="hero.chip1">Java 21 · Spring Boot</span></span>
+          <span class="chip chip-2"><span class="ponto"></span><span data-i18n="hero.chip2">Sistema no ar · 80+ usuários</span></span>
+          <span class="chip chip-3"><span class="ponto"></span><span data-i18n="hero.chip3">Ethical Hacking · HackerX</span></span>
+        </div>
+      </div>
+
+      <div class="marquee" aria-label="Tecnologias" data-i18n-al="hero.marqueeAria">
+        <div class="marquee-trilho" id="marquee">
+          <span>Java 21</span><span>Spring Boot</span><span>Spring Security</span><span>PostgreSQL</span><span>Flyway</span>
+          <span>Docker</span><span>Oracle Cloud</span><span>AWS</span><span>Caddy</span><span>GitHub Actions</span>
+          <span>React</span><span>JavaScript</span><span>Python</span><span>JUnit 5</span><span>OWASP Top 10</span><span>Linux</span><span>Git</span>
+        </div>
+      </div>
     </div>
-  </div>
-</section>
+  </header>
 
-<!-- ============ SEÇÃO 06 ============ -->
-<section id="atividade">
+  <!-- ============ FAIXA DE INSTITUIÇÕES ============ -->
+  <section class="faixa-inst" aria-labelledby="instTitulo">
+    <div class="container">
+      <p class="faixa-rotulo" id="instTitulo" data-i18n="inst.label">Formação e certificações por</p>
+      <ul class="faixa-lista">
+        <li>FAETERJ</li><li>Serratec</li><li>Hackers do Bem</li><li>HackerX</li><li>Oracle ONE</li><li>Alura</li><li>Fundação Bradesco</li><li>EF SET</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============ § 01 SOBRE ============ -->
+  <section id="sobre" class="secao secao-alt">
+    <div class="container">
+      <div class="secao-cab reveal"><span class="secao-num">§ 01</span><span class="secao-rotulo" data-i18n="s1.label">Quem vai somar ao seu time</span></div>
+
+      <div class="sobre-grid">
+        <div class="sobre-texto reveal">
+          <p class="sobre-lead" data-i18n="s1.lead">Sou <strong>Gildean Monteiro</strong>, desenvolvedor full stack em formação que <em>aprende construindo</em> e mantém no ar o que constrói.</p>
+          <p data-i18n="s1.p1">Curso <strong>Tecnologia da Informação e Comunicação na FAETERJ</strong> e sou o responsável pelo <strong>Hub Atlética Dragões</strong>, a plataforma que os alunos de TIC usam para notas, cronograma, conteúdos de estudo, carteirinha digital, reserva de salas e campeonatos de e-sports. Modelo o banco, escrevo o back-end, monto a interface, configuro o servidor e faço o deploy.</p>
+          <p data-i18n="s1.p2">Segurança é meu diferencial: tenho a <strong>certificação de Ethical Hacking da HackerX</strong> e estou na formação <strong>Hackers do Bem (MCTI/RNP)</strong> desde abril de 2026. Isso muda como eu escrevo código: rotas protegidas por padrão, dados pessoais tratados conforme a LGPD e varreduras de segurança nos meus próprios sistemas.</p>
+          <p data-i18n="s1.p3">Antes da TI, fui <strong>subgerente de uma operação com mais de 700 clientes por dia</strong>. Trouxe de lá o que nenhum curso ensina: comunicação, responsabilidade e calma sob pressão. Hoje também sou Conselheiro Acadêmico e Presidente da Atlética Dragões.</p>
+          <p class="sobre-frase" data-i18n="s1.quote">Não quero só escrever código. Quero entregar coisas que as pessoas usam de verdade.</p>
+        </div>
+
+        <aside class="cartao-ficha reveal" aria-label="Ficha rápida" data-i18n-al="s1.cardAria">
+          <dl>
+            <div><dt data-i18n="s1.k1">Objetivo</dt><dd data-i18n="s1.v1">Estágio ou Dev Júnior</dd></div>
+            <div><dt data-i18n="s1.k2">Local</dt><dd>Petrópolis, RJ · BR</dd></div>
+            <div><dt data-i18n="s1.k3">Modalidade</dt><dd data-i18n="s1.v3">Presencial · Híbrido · Remoto</dd></div>
+            <div><dt data-i18n="s1.k4">Formação</dt><dd data-i18n="s1.v4">TIC · FAETERJ (em curso)</dd></div>
+            <div><dt data-i18n="s1.k5">Stack principal</dt><dd>Java · Spring · PostgreSQL</dd></div>
+            <div><dt data-i18n="s1.k6">Idiomas</dt><dd data-i18n="s1.v6">Português nativo · Inglês C2</dd></div>
+            <div><dt>Status</dt><dd class="status-ok"><span class="ponto-mint"></span><span data-i18n="s1.v7">Disponível para entrevistas</span></dd></div>
+          </dl>
+          <a class="btn btn-whats" href="https://wa.me/5524981312273?text=Ol%C3%A1%2C%20Gildean!%20Vi%20seu%20portf%C3%B3lio%20e%20gostaria%20de%20conversar." target="_blank" rel="noopener" data-i18n-href="s1.whatsHref">
+            <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Z"/></svg>
+            <span data-i18n="s1.whats">Conversar pelo WhatsApp</span>
+          </a>
+        </aside>
+      </div>
+
+      <div class="metricas reveal">
+        <div class="metrica"><b><span data-contar="80">80</span><i>+</i></b><span data-i18n="m1">contas ativas no Hub</span></div>
+        <div class="metrica"><b><span data-contar="1275">1.275</span></b><span data-i18n="m2">testes automatizados no Hub</span></div>
+        <div class="metrica"><b><span data-contar="40">40</span><i>+</i></b><span data-i18n="m3">certificados em TI</span></div>
+        <div class="metrica"><b><span data-contar="700">700</span><i>+</i></b><span data-i18n="m4">clientes por dia liderados</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ § 02 PARA QUEM ============ -->
+  <section id="encaixe" class="secao">
+    <div class="container container-estreito">
+      <div class="secao-cab reveal"><span class="secao-num">§ 02</span><span class="secao-rotulo" data-i18n="s2.label">Para quem é este perfil</span></div>
+      <h2 class="titulo reveal" data-i18n="s2.title">O encaixe <em>certo</em> para o seu time</h2>
+      <p class="subtitulo reveal" data-i18n="s2.sub">Antes de me chamar, veja o que eu procuro e o que eu levo. Isso poupa o seu tempo e o meu.</p>
+
+      <div class="encaixe-grid">
+        <div class="cartao encaixe reveal">
+          <h3 class="encaixe-titulo encaixe-sim">
+            <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" d="m5 12 5 5L20 7"/></svg>
+            <span data-i18n="s2.c1t">Sou um bom encaixe se você</span>
+          </h3>
+          <ul>
+            <li data-i18n="s2.c1a">Tem vaga de estágio ou júnior em desenvolvimento: back-end Java, full stack ou web</li>
+            <li data-i18n="s2.c1b">Precisa de alguém em infraestrutura, cloud ou suporte que também programa</li>
+            <li data-i18n="s2.c1c">Busca um perfil de segurança da informação em início de carreira</li>
+            <li data-i18n="s2.c1d">Valoriza quem já colocou sistema em produção e cuida dele depois do deploy</li>
+          </ul>
+        </div>
+        <div class="cartao encaixe reveal">
+          <h3 class="encaixe-titulo encaixe-leva">
+            <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" d="M5 12h14m-5-5 5 5-5 5"/></svg>
+            <span data-i18n="s2.c2t">O que eu levo para o time</span>
+          </h3>
+          <ul>
+            <li data-i18n="s2.c2a">Vivência real de produção: deploy, backup, monitoramento e correção de incidentes</li>
+            <li data-i18n="s2.c2b">Atenção à segurança e à LGPD desde o primeiro commit</li>
+            <li data-i18n="s2.c2c">Comunicação clara, vinda de anos de atendimento e liderança de equipe</li>
+            <li data-i18n="s2.c2d">Inglês C2 para documentação, reuniões e times internacionais</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ § 03 HABILIDADES ============ -->
+  <section id="habilidades" class="secao secao-alt">
+    <div class="container">
+      <div class="secao-cab reveal"><span class="secao-num">§ 03</span><span class="secao-rotulo" data-i18n="s3.label">O que eu sei fazer</span></div>
+      <h2 class="titulo reveal" data-i18n="s3.title">O que eu entrego <em>para o seu time</em></h2>
+      <p class="subtitulo reveal" data-i18n="s3.sub">Cada item abaixo já está em uso num sistema em produção. Não é uma lista de tecnologias que eu “sei mexer”.</p>
+
+      <div class="grade-servicos reveal">
+        <article class="servico"><span class="servico-num">01 / 09</span><h3 data-i18n="h1t">Back-end Java &amp; Spring Boot</h3><p data-i18n="h1d">APIs REST com Java 21 e Spring Boot 3.5: controllers, serviços, JPA/Hibernate e regras de negócio cobertas por testes.</p></article>
+        <article class="servico"><span class="servico-num">02 / 09</span><h3 data-i18n="h2t">APIs &amp; integrações</h3><p data-i18n="h2d">Integração com LLM (Groq), login Google (OAuth2), e-mail SMTP, armazenamento S3 (Cloudflare R2) e notificações Web Push.</p></article>
+        <article class="servico"><span class="servico-num">03 / 09</span><h3 data-i18n="h3t">Banco de dados PostgreSQL</h3><p data-i18n="h3d">Modelagem, índices e constraints, com schema versionado em 46 migrações Flyway, ensaiadas numa cópia do banco antes de ir ao ar.</p></article>
+        <article class="servico"><span class="servico-num">04 / 09</span><h3 data-i18n="h4t">Front-end &amp; PWA</h3><p data-i18n="h4d">Interfaces responsivas em HTML, CSS e JavaScript, PWA instalável, React 18 com Vite e cuidado com acessibilidade (teclado e contraste AA).</p></article>
+        <article class="servico"><span class="servico-num">05 / 09</span><h3 data-i18n="h5t">Cloud &amp; DevOps</h3><p data-i18n="h5d">Docker Compose, Caddy com TLS automático, Linux, Oracle Cloud e AWS; CI/CD com GitHub Actions + GHCR e rollback por versão.</p></article>
+        <article class="servico"><span class="servico-num">06 / 09</span><h3 data-i18n="h6t">Segurança &amp; LGPD</h3><p data-i18n="h6d">JWT + BCrypt, OAuth2, rotas protegidas por padrão, rate limiting, CSP/HSTS, defesa contra XSS e SQL injection, exportação e exclusão de dados do titular.</p></article>
+        <article class="servico"><span class="servico-num">07 / 09</span><h3 data-i18n="h7t">Qualidade &amp; testes</h3><p data-i18n="h7d">1.275 testes automatizados (JUnit 5 e Mockito) e o hábito de provar que a correção funciona antes de fazer o deploy.</p></article>
+        <article class="servico"><span class="servico-num">08 / 09</span><h3 data-i18n="h8t">IA aplicada</h3><p data-i18n="h8d">Assistente com LLM, FAQ determinístico e cache para reduzir custo, degradação controlada quando a cota acaba e noções de RAG.</p></article>
+        <article class="servico"><span class="servico-num">09 / 09</span><h3 data-i18n="h9t">Comunicação &amp; liderança</h3><p data-i18n="h9d">Dois anos como subgerente (700+ clientes/dia) e representação estudantil: explicar, negociar prioridades e trabalhar em equipe.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ § 04 PROJETOS ============ -->
+  <section id="projetos" class="secao">
+    <div class="container">
+      <div class="secao-cab reveal"><span class="secao-num">§ 04</span><span class="secao-rotulo" data-i18n="s4.label">Projetos</span></div>
+      <h2 class="titulo reveal" data-i18n="s4.title">Projetos reais, <em>não só exercícios</em></h2>
+      <p class="subtitulo reveal" data-i18n="s4.sub">Uma amostra do que eu já construí e coloquei no ar.</p>
+
+      <div class="grade-projetos">
+        <article class="projeto reveal">
+          <div class="projeto-topo"><span class="etiqueta" data-i18n="p1.tag">Plataforma em produção</span><span class="projeto-nota" data-i18n="p1.note">80+ contas</span></div>
+          <h3>Hub Atlética Dragões</h3>
+          <p data-i18n="p1.d">Plataforma web dos alunos de TIC da FAETERJ: notas e simulador de aprovação, cronograma, conteúdos, carteirinha com QR verificável, reserva de salas, e-sports e assistente de IA.</p>
+          <ul class="tags"><li>Java 21</li><li>Spring Boot</li><li>PostgreSQL</li><li>Docker</li><li>Oracle Cloud</li></ul>
+          <a class="projeto-link" href="https://atleticadragoes.com.br" target="_blank" rel="noopener" data-i18n="p1.link">Ver ao vivo ↗</a>
+        </article>
+
+        <article class="projeto reveal">
+          <div class="projeto-topo"><span class="etiqueta" data-i18n="p2.tag">Projeto pessoal</span><span class="projeto-nota projeto-off" data-i18n="p2.note">fora do ar no momento</span></div>
+          <h3>OmniRate</h3>
+          <p data-i18n="p2.d">Plataforma de avaliações de cultura pop (filmes, séries, jogos, livros, álbuns e HQs) com autenticação JWT, migrações Flyway e aceite de termos conforme a LGPD. Publiquei na Oracle Cloud com Docker Compose e Caddy em 2025.</p>
+          <ul class="tags"><li>Java 21</li><li>Spring Boot</li><li>React 18</li><li>PostgreSQL</li><li>Oracle Cloud</li></ul>
+        </article>
+
+        <article class="projeto reveal">
+          <div class="projeto-topo"><span class="etiqueta" data-i18n="p3.tag">Este site</span></div>
+          <h3 data-i18n="p3.t">Portfólio</h3>
+          <p data-i18n="p3.d">HTML, CSS e JavaScript puros, sem dependências nem build, em português e inglês, com cabeçalhos de segurança (CSP, HSTS, X-Frame-Options) configurados na Vercel.</p>
+          <ul class="tags"><li>HTML</li><li>CSS</li><li>JavaScript</li><li>Vercel</li><li>CSP</li></ul>
+          <a class="projeto-link" href="https://github.com/Everett-gi/portfolio" target="_blank" rel="noopener" data-i18n="p3.link">Ver código ↗</a>
+        </article>
+
+        <article class="projeto reveal">
+          <div class="projeto-topo"><span class="etiqueta etiqueta-dev" data-i18n="p4.tag">Em desenvolvimento</span></div>
+          <h3>DocSage</h3>
+          <p data-i18n="p4.d">Aplicação RAG para perguntar sobre documentos: busca semântica com embeddings e respostas geradas pela API da Anthropic.</p>
+          <ul class="tags"><li>Python</li><li>FastAPI</li><li>pgvector</li><li>RAG</li></ul>
+          <a class="projeto-link" href="https://github.com/Everett-gi" target="_blank" rel="noopener" data-i18n="p4.link">Acompanhar no GitHub ↗</a>
+        </article>
+
+        <article class="projeto reveal">
+          <div class="projeto-topo"><span class="etiqueta etiqueta-estudo" data-i18n="p5.tag">Estudo</span></div>
+          <h3>Ping-Pong</h3>
+          <p data-i18n="p5.d">O clássico recriado em JavaScript puro: canvas, colisões e placar construídos do zero para consolidar lógica e manipulação do DOM.</p>
+          <ul class="tags"><li>JavaScript</li><li>Canvas</li><li>HTML</li><li>CSS</li></ul>
+          <a class="projeto-link" href="https://github.com/Everett-gi/Ping-Pong" target="_blank" rel="noopener" data-i18n="p5.link">Ver código ↗</a>
+        </article>
+
+        <article class="projeto reveal">
+          <div class="projeto-topo"><span class="etiqueta etiqueta-estudo">Oracle ONE</span></div>
+          <h3 data-i18n="p6.t">Desafios ONE</h3>
+          <p data-i18n="p6.d">Projetos do programa Oracle Next Education com a Alura: Jogo do Número Secreto e Amigo Secreto, com funções, arrays e eventos em JavaScript.</p>
+          <ul class="tags"><li>JavaScript</li><li>HTML</li><li>CSS</li><li data-i18n="p6.tag">Lógica</li></ul>
+          <div class="projeto-links">
+            <a class="projeto-link" href="https://github.com/Everett-gi/ONE-jogoDoNumeroSecreto" target="_blank" rel="noopener" data-i18n="p6.l1">Número Secreto ↗</a>
+            <a class="projeto-link" href="https://github.com/Everett-gi/ONE-challengeAmigoSecreto" target="_blank" rel="noopener" data-i18n="p6.l2">Amigo Secreto ↗</a>
+          </div>
+        </article>
+      </div>
+
+      <!-- destaque: o Hub -->
+      <div class="destaque-hub reveal" id="hub">
+        <div class="destaque-texto">
+          <p class="destaque-marca"><span class="destaque-logo">Hub<b>.</b></span><span class="mono-pilula" data-i18n="hub.pill">Projeto próprio · em produção</span></p>
+          <h3 class="destaque-titulo" data-i18n="hub.title">Idealizei, construí e mantenho <em>no&nbsp;ar</em> a plataforma dos alunos de TIC</h3>
+          <p class="destaque-desc" data-i18n="hub.desc">Java 21 e Spring Boot no back-end, PostgreSQL com 46 migrações Flyway, front-end PWA em JavaScript puro, Docker e Caddy na Oracle Cloud. Migrei a infraestrutura da AWS para a Oracle e o custo mensal caiu de ~R$ 170 para zero, com cerca de 2 minutos de indisponibilidade.</p>
+          <div class="destaque-metricas">
+            <div><b><span data-contar="1275">1.275</span></b><span data-i18n="hub.m1">testes automatizados</span></div>
+            <div><b>~290</b><span data-i18n="hub.m2">endpoints REST</span></div>
+            <div><b>R$ 0</b><span data-i18n="hub.m3">de custo mensal de servidor</span></div>
+          </div>
+          <a class="btn btn-roxo" href="https://atleticadragoes.com.br" target="_blank" rel="noopener">
+            <span data-i18n="hub.cta">Conhecer o Hub</span>
+            <svg viewBox="0 0 24 24" width="15" height="15" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" d="M5 12h14m-5-5 5 5-5 5"/></svg>
+          </a>
+          <p class="destaque-obs" data-i18n="hub.obs">Código privado porque o sistema guarda dados de alunos reais. Mostro a arquitetura e o código numa entrevista técnica.</p>
+        </div>
+
+        <div class="terminal" role="img" aria-label="Terminal com o estado do Hub em produção" data-i18n-al="hub.termAria">
+          <div class="terminal-barra"><i></i><i></i><i></i><span>ubuntu@oracle-sp: ~/hub-atletica</span></div>
+<pre class="terminal-corpo"><span class="t-prompt">$</span> curl -s atleticadragoes.com.br/api/health
+<span class="t-out">{ "status": "<b>UP</b>", "banco": "<b>UP</b>",
+  "draco": { "estado": "<b>ok</b>" }, "email": { "estado": "<b>ok</b>" } }</span>
+
+<span class="t-prompt">$</span> docker compose ps --format "{{.Service}}: {{.Status}}"
+<span class="t-out">caddy:        Up (<b>healthy</b>)
+chatbot-api:  Up (<b>healthy</b>)
+postgres:     Up (<b>healthy</b>)</span>
+
+<span class="t-prompt">$</span> ls api/src/main/resources/db/migration | wc -l
+<span class="t-out">46</span>
+
+<span class="t-prompt">$</span> grep -rE "@Test\b" api/src/test | wc -l
+<span class="t-out">1275</span>
+
+<span class="t-prompt">$</span> <span class="t-cursor"></span></pre>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ § 05 PROCESSO ============ -->
+  <section id="processo" class="secao secao-alt">
+    <div class="container">
+      <div class="secao-cab reveal"><span class="secao-num">§ 05</span><span class="secao-rotulo" data-i18n="s5.label">Como eu trabalho</span></div>
+      <h2 class="titulo reveal" data-i18n="s5.title">Um jeito de trabalhar <em>previsível</em>, sem surpresas no deploy</h2>
+
+      <ol class="processo reveal">
+        <li><span class="processo-num">01</span><h3 data-i18n="pr1t">Entender</h3><p data-i18n="pr1d">Antes de escrever código, entendo o problema e meço o que está acontecendo com dados reais.</p></li>
+        <li><span class="processo-num">02</span><h3 data-i18n="pr2t">Fatiar</h3><p data-i18n="pr2d">Divido o trabalho em entregas pequenas e completas, uma de cada vez.</p></li>
+        <li><span class="processo-num">03</span><h3 data-i18n="pr3t">Construir e testar</h3><p data-i18n="pr3d">Código com testes, incluindo o teste que prova que o defeito não volta.</p></li>
+        <li><span class="processo-num">04</span><h3 data-i18n="pr4t">Validar e publicar</h3><p data-i18n="pr4d">Migração ensaiada numa cópia do banco, deploy pelo CI e conferência no ar.</p></li>
+        <li><span class="processo-num">05</span><h3 data-i18n="pr5t">Medir</h3><p data-i18n="pr5d">Acompanho logs e métricas depois do deploy e ajusto pelo uso real.</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ============ § 06 STACK ============ -->
+  <section id="stack" class="secao">
+    <div class="container">
+      <div class="secao-cab reveal"><span class="secao-num">§ 06</span><span class="secao-rotulo" data-i18n="s6.label">Stack técnica</span></div>
+      <h2 class="titulo reveal" data-i18n="s6.title">Tecnologias que uso <em>em produção</em>, não só no currículo</h2>
+
+      <div class="grade-stack reveal">
+        <div class="stack-col"><h3>Back-end</h3><ul><li>Java 21</li><li>Spring Boot 3.5</li><li>Spring Security</li><li>JPA / Hibernate</li><li>JUnit 5 · Mockito</li></ul></div>
+        <div class="stack-col"><h3>Front-end</h3><ul><li>JavaScript</li><li>HTML &amp; CSS</li><li>React 18</li><li>Vite</li><li>PWA</li></ul></div>
+        <div class="stack-col"><h3 data-i18n="st3">Dados</h3><ul><li>PostgreSQL</li><li>Flyway</li><li>SQL</li><li>Neon</li></ul></div>
+        <div class="stack-col"><h3>Cloud &amp; DevOps</h3><ul><li>Oracle Cloud</li><li>AWS EC2</li><li>Docker</li><li>Caddy</li><li>GitHub Actions</li></ul></div>
+        <div class="stack-col"><h3 data-i18n="st5">Segurança &amp; IA</h3><ul><li>OWASP Top 10</li><li>JWT · OAuth2</li><li>LGPD</li><li>LLMs · Groq</li><li>Python</li></ul></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ § 07 TRAJETÓRIA ============ -->
+  <section id="trajetoria" class="secao secao-alt">
+    <div class="container">
+      <div class="secao-cab reveal"><span class="secao-num">§ 07</span><span class="secao-rotulo" data-i18n="s7.label">Experiência e formação</span></div>
+      <h2 class="titulo reveal" data-i18n="s7.title">Uma trajetória <em>construída na prática</em></h2>
+      <p class="subtitulo reveal" data-i18n="s7.sub">Tecnologia no estudo e nos projetos; atendimento e liderança no trabalho. As duas coisas aparecem no jeito como eu trabalho.</p>
+
+      <div class="trajetoria-grid">
+        <div class="cartao linha-tempo reveal">
+          <h3 class="linha-titulo" data-i18n="s7.exp">Experiência profissional</h3>
+          <ol>
+            <li><span class="lt-data" data-i18n="e1d">nov/2025 → atual</span><h4 data-i18n="e1t">Controlador de Estacionamento <em>· Estapar</em></h4><p data-i18n="e1p">Sistemas de controle de acesso e monitoramento de fluxo; incidentes resolvidos em tempo real com protocolos de segurança. Trilha de conscientização em cibersegurança da Academia Estapar.</p></li>
+            <li><span class="lt-data" data-i18n="e2d">mar/2025 → jul/2025</span><h4 data-i18n="e2t">Recepcionista <em>· Odonto Company</em></h4><p data-i18n="e2p">Atendimento presencial, telefônico e virtual; agenda de consultas.</p></li>
+            <li><span class="lt-data" data-i18n="e3d">jun/2024 → mar/2025</span><h4 data-i18n="e3t">Jovem Aprendiz <em>· CIEE</em></h4><p data-i18n="e3p">Atendimento a clientes e suporte a rotinas administrativas.</p></li>
+            <li><span class="lt-data" data-i18n="e4d">fev/2022 → dez/2023</span><h4 data-i18n="e4t">Subgerente <em>· Mega Lanches, São Paulo</em></h4><p data-i18n="e4p">Liderança de uma operação com 700+ clientes por dia: escala e delegação da equipe, recursos e melhoria de processos.</p></li>
+            <li><span class="lt-data" data-i18n="e5d">ago/2018 → dez/2020</span><h4 data-i18n="e5t">Atendente <em>· Mega Lanches, São Paulo</em></h4><p data-i18n="e5p">Atendimento ágil e operação de equipamentos com foco em qualidade, até a promoção.</p></li>
+          </ol>
+        </div>
+
+        <div class="cartao linha-tempo reveal">
+          <h3 class="linha-titulo" data-i18n="s7.edu">Formação e cursos</h3>
+          <ol>
+            <li><span class="lt-data" data-i18n="f1d">mar/2024 → em curso</span><h4 data-i18n="f1t">Tecnologia da Informação e Comunicação <em>· FAETERJ</em></h4><p data-i18n="f1p">Redes, integração de sistemas, servidores e desenvolvimento. Conselheiro Acadêmico e Presidente da Atlética Dragões desde mai/2024.</p></li>
+            <li><span class="lt-data" data-i18n="f2d">abr/2026 → em curso</span><h4 data-i18n="f2t">Formação em Cibersegurança <em>· Hackers do Bem (MCTI/RNP)</em></h4><p data-i18n="f2p">Programa nacional de formação em segurança cibernética do Ministério da Ciência, Tecnologia e Inovação, executado pela RNP.</p></li>
+            <li><span class="lt-data" data-i18n="f3d">fev/2025 → mar/2026</span><h4 data-i18n="f3t">Ethical Hacking &amp; Cybersecurity <em>· HackerX</em></h4><p data-i18n="f3p">Certificação final e 17 módulos: XSS, SQL injection, varredura de vulnerabilidades, sniffing e MITM, senhas, Wi-Fi e IA aplicada à segurança.</p></li>
+            <li><span class="lt-data" data-i18n="f4d">mai/2025 → jul/2025</span><h4 data-i18n="f4t">Residência em TIC <em>· Serratec</em></h4><p data-i18n="f4p">Imersão em Python, IoT, Inteligência Artificial e Cloud, com projetos em equipe.</p></li>
+            <li><span class="lt-data">2025</span><h4 data-i18n="f5t">Formação Iniciante em Programação G8 <em>· Oracle ONE + Alura</em></h4><p data-i18n="f5p">70 horas de lógica com JavaScript, HTML e CSS responsivo, Git e GitHub.</p></li>
+          </ol>
+        </div>
+      </div>
+      <p class="nota-rodape reveal" data-i18n="s7.note">Quer tudo num documento só? <a href="curriculo/Gildean_Monteiro_Curriculo.pdf" download>Baixe o currículo em PDF</a> ou a <a href="curriculo/Gildean_Monteiro_Resume_EN.pdf" download>versão em inglês</a>.</p>
+    </div>
+  </section>
+
+  <!-- ============ § 08 CERTIFICADOS ============ -->
+  <section id="certificados" class="secao">
+    <div class="container">
+      <div class="secao-cab reveal"><span class="secao-num">§ 08</span><span class="secao-rotulo" data-i18n="s8.label">Certificados em destaque</span></div>
+      <h2 class="titulo reveal" data-i18n="s8.title">Estudo contínuo, <em>comprovado</em></h2>
+
+      <div class="grade-cert">
+        <article class="cert reveal">
+          <div class="cert-img cert-img-texto" aria-hidden="true"><span>Hackers<br>do Bem</span></div>
+          <span class="cert-estado cert-andamento" data-i18n="c1s">Em andamento</span>
+          <h3 data-i18n="c1t">Formação em Cibersegurança</h3>
+          <p class="cert-emissor">Hackers do Bem · MCTI / RNP</p>
+          <p class="cert-data" data-i18n="c1d">desde abr/2026</p>
+        </article>
+        <article class="cert reveal">
+          <div class="cert-img"><img src="img/certificados/hackerx-final.jpg" alt="Certificado Ethical Hacking & Cybersecurity, HackerX" loading="lazy" width="400" height="283"></div>
+          <span class="cert-estado" data-i18n="c2s">Certificação final</span>
+          <h3>Ethical Hacking &amp; Cybersecurity</h3>
+          <p class="cert-emissor" data-i18n="c2e">HackerX · 17 módulos</p>
+          <p class="cert-data" data-i18n="c2d">mar/2026</p>
+        </article>
+        <article class="cert reveal">
+          <div class="cert-img"><img src="img/certificados/one-formacao-g8.jpg" alt="Certificado Formação Iniciante em Programação G8, Oracle Next Education" loading="lazy" width="400" height="283"></div>
+          <span class="cert-estado" data-i18n="c3s">70 horas</span>
+          <h3 data-i18n="c3t">Formação Iniciante em Programação G8</h3>
+          <p class="cert-emissor">Oracle Next Education · Alura</p>
+          <p class="cert-data" data-i18n="c3d">mar/2025</p>
+        </article>
+        <article class="cert reveal">
+          <div class="cert-img"><img src="img/certificados/efset-ingles.jpg" alt="Certificado EF SET, inglês C2" loading="lazy" width="400" height="283"></div>
+          <span class="cert-estado" data-i18n="c4s">C2 Proficient</span>
+          <h3 data-i18n="c4t">Inglês · EF SET 82/100</h3>
+          <p class="cert-emissor">EF Standard English Test</p>
+          <p class="cert-data" data-i18n="c4d">abr/2024</p>
+        </article>
+      </div>
+
+      <div class="centro reveal">
+        <a class="btn btn-ghost" href="certificados.html">
+          <span data-i18n="s8.cta">Ver todos os 40+ certificados</span>
+          <svg viewBox="0 0 24 24" width="15" height="15" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" d="M5 12h14m-5-5 5 5-5 5"/></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ § 09 FAQ ============ -->
+  <section id="faq" class="secao secao-alt">
+    <div class="container container-estreito">
+      <div class="secao-cab reveal"><span class="secao-num">§ 09</span><span class="secao-rotulo" data-i18n="s9.label">Perguntas de recrutadores</span></div>
+      <h2 class="titulo reveal" data-i18n="s9.title">Perguntas que recrutadores <em>fazem antes</em> de chamar</h2>
+
+      <div class="faq reveal">
+        <details open>
+          <summary data-i18n="q1">Que tipo de vaga você procura?</summary>
+          <p data-i18n="a1">Estágio ou vaga júnior em desenvolvimento (back-end Java ou full stack), infraestrutura e cloud, ou segurança da informação. Também estou aberto a outras áreas de TI em que eu possa aprender rápido e contribuir.</p>
+        </details>
+        <details>
+          <summary data-i18n="q2">Qual é a sua disponibilidade?</summary>
+          <p data-i18n="a2">Moro em Petrópolis (RJ) e posso atuar de forma presencial, híbrida ou remota. Concilio o trabalho com a graduação na FAETERJ; os horários combinamos na entrevista.</p>
+        </details>
+        <details>
+          <summary data-i18n="q3">Você já trabalhou com TI profissionalmente?</summary>
+          <p data-i18n="a3">Ainda não com carteira assinada em TI. Minha experiência técnica vem do Hub Atlética Dragões, que construí e mantenho em produção, de projetos pessoais como o OmniRate, da residência no Serratec e das certificações. Profissionalmente, trago mais de 6 anos de atendimento e liderança, incluindo dois anos como subgerente.</p>
+        </details>
+        <details>
+          <summary data-i18n="q4">Posso ver o código do Hub?</summary>
+          <p data-i18n="a4">O repositório é privado porque o sistema guarda dados de alunos reais. O site está no ar em atleticadragoes.com.br, com modo visitante sem login, e eu apresento a arquitetura, o código e o painel numa conversa ou entrevista técnica. O código deste portfólio é público no GitHub.</p>
+        </details>
+        <details>
+          <summary data-i18n="q5">Como você usa IA no desenvolvimento?</summary>
+          <p data-i18n="a5">Como ferramenta de produtividade, sempre com revisão, testes e validação antes do deploy. Também integro LLMs em produto: o assistente do Hub responde dúvidas dos alunos com custo controlado.</p>
+        </details>
+        <details>
+          <summary data-i18n="q6">Qual é o seu nível de inglês?</summary>
+          <p data-i18n="a6">C2 (Proficient) no EF SET, com nota 82/100. Leio documentação técnica, escrevo e converso com fluência.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTATO ============ -->
+  <section id="contato" class="secao">
+    <div class="container">
+      <div class="contato-cartao reveal">
+        <div class="contato-texto">
+          <p class="contato-rotulo"><span class="quadrado"></span><span data-i18n="ct.label">Vamos conversar</span></p>
+          <h2 class="titulo" data-i18n="ct.title">Tem uma vaga? Me conte e <em>respondo rápido</em></h2>
+          <p class="subtitulo" data-i18n="ct.sub">Mande a descrição da vaga ou marque uma conversa. Costumo responder no mesmo dia.</p>
+
+          <form class="form-contato" id="formContato" novalidate>
+            <label class="sr-only" for="fNome" data-i18n="f.nome">Seu nome</label>
+            <input id="fNome" name="nome" type="text" autocomplete="name" placeholder="Seu nome" data-i18n-ph="f.nome" required>
+            <label class="sr-only" for="fEmpresa" data-i18n="f.empresa">Empresa (opcional)</label>
+            <input id="fEmpresa" name="empresa" type="text" autocomplete="organization" placeholder="Empresa (opcional)" data-i18n-ph="f.empresa">
+            <label class="sr-only" for="fMsg" data-i18n="f.msg">Conte sobre a vaga</label>
+            <textarea id="fMsg" name="mensagem" rows="4" placeholder="Conte sobre a vaga ou a oportunidade" data-i18n-ph="f.msg" required></textarea>
+            <p class="form-erro" id="formErro" role="alert" hidden data-i18n="f.erro">Preencha seu nome e a mensagem.</p>
+            <button type="submit" class="btn btn-brand btn-bloco" data-i18n="f.enviar">Enviar pelo WhatsApp</button>
+            <p class="form-obs" data-i18n="f.obs">Nada é salvo neste site: o formulário só monta a mensagem e abre o WhatsApp.</p>
+          </form>
+        </div>
+
+        <ul class="canais">
+          <li><a class="canal" href="https://wa.me/5524981312273" target="_blank" rel="noopener">
+            <span class="canal-icone canal-whats"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.4.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.8 11.9 11.9 0 0 0 4.6 4c1.7.7 2.4.8 3.2.7.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.1-1.2l-.5-.2Z"/></svg></span>
+            <span class="canal-info"><span class="canal-rotulo">WhatsApp</span><span class="canal-valor" data-i18n="ch1">(24) 98131-2273 · resposta mais rápida</span></span></a></li>
+          <li><a class="canal" href="tel:+5511982953630">
+            <span class="canal-icone"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" d="M5 3.5h3.2l1.6 4.2-2.1 1.3a11 11 0 0 0 5.3 5.3l1.3-2.1 4.2 1.6V17a2.5 2.5 0 0 1-2.5 2.5A15.5 15.5 0 0 1 2.5 6 2.5 2.5 0 0 1 5 3.5Z"/></svg></span>
+            <span class="canal-info"><span class="canal-rotulo" data-i18n="ch6r">Telefone</span><span class="canal-valor" data-i18n="ch6">(11) 98295-3630 · ligações</span></span></a></li>
+          <li><a class="canal" href="mailto:gmonteiro0808@gmail.com">
+            <span class="canal-icone"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" d="M3 6h18v12H3zM3 7l9 6 9-6"/></svg></span>
+            <span class="canal-info"><span class="canal-rotulo">E-mail</span><span class="canal-valor">gmonteiro0808@gmail.com</span></span></a></li>
+          <li><a class="canal" href="https://www.linkedin.com/in/gm-nascimento" target="_blank" rel="noopener">
+            <span class="canal-icone"><svg viewBox="0 0 24 24" width="17" height="17" aria-hidden="true"><path fill="currentColor" d="M6.9 8.6H3.6V21h3.3V8.6ZM5.2 3a1.9 1.9 0 1 0 0 3.8 1.9 1.9 0 0 0 0-3.8ZM21 13.9c0-3.4-1.8-5.5-4.6-5.5a4 4 0 0 0-3.6 2V8.6H9.6V21h3.3v-6.5c0-1.7.9-2.8 2.3-2.8s2.2 1 2.2 2.8V21H21v-7.1Z"/></svg></span>
+            <span class="canal-info"><span class="canal-rotulo">LinkedIn</span><span class="canal-valor">in/gm-nascimento</span></span></a></li>
+          <li><a class="canal" href="https://github.com/Everett-gi" target="_blank" rel="noopener">
+            <span class="canal-icone"><svg viewBox="0 0 24 24" width="17" height="17" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-3.2 19.5c.5.1.7-.2.7-.5v-1.7c-2.8.6-3.4-1.3-3.4-1.3-.5-1.2-1.1-1.5-1.1-1.5-.9-.6.1-.6.1-.6 1 .1 1.5 1 1.5 1 .9 1.5 2.3 1.1 2.9.8.1-.6.3-1.1.6-1.3-2.2-.3-4.6-1.1-4.6-5a3.9 3.9 0 0 1 1-2.7 3.6 3.6 0 0 1 .1-2.7s.8-.3 2.8 1a9.6 9.6 0 0 1 5 0c1.9-1.3 2.8-1 2.8-1 .5 1.4.2 2.4.1 2.7a3.9 3.9 0 0 1 1 2.7c0 3.9-2.3 4.7-4.6 5 .4.3.7.9.7 1.9V21c0 .3.2.6.7.5A10 10 0 0 0 12 2Z"/></svg></span>
+            <span class="canal-info"><span class="canal-rotulo">GitHub</span><span class="canal-valor">Everett-gi</span></span></a></li>
+          <li><a class="canal" href="curriculo/Gildean_Monteiro_Curriculo.pdf" download data-i18n-href="hero.cvHref">
+            <span class="canal-icone"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M12 4v12m0 0 5-5m-5 5-5-5M5 20h14"/></svg></span>
+            <span class="canal-info"><span class="canal-rotulo" data-i18n="ch5r">Currículo</span><span class="canal-valor" data-i18n="ch5">Baixar PDF</span></span></a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- ============ RODAPÉ ============ -->
+<footer class="rodape">
   <div class="container">
-    <p class="secao-tag reveal" data-i18n="s6.tag">SEÇÃO 06 / TRAJETÓRIA</p>
-    <h2 class="titulo reveal" data-i18n="s6.title">Minha trajetória</h2>
-
-    <div class="filtros reveal">
-      <button class="filtro ativa" data-alvo="log-prof" data-i18n="filtro.prof">[ PROFISSIONAL ]</button>
-      <button class="filtro" data-alvo="log-acad" data-i18n="filtro.acad">[ ACADÊMICA ]</button>
-    </div>
-
-    <div class="log ativa" id="log-prof">
-      <div class="log-item reveal">
-        <span class="log-data"><span data-i18n="prof1.d1">11/2025 → atual</span><span data-i18n="prof1.d2">≈ 8 meses e contando</span></span>
-        <div class="log-info">
-          <h3 data-i18n-html="prof1.r">Controlador de Estacionamento <em>· Estapar — Petrópolis, RJ</em></h3>
-          <p data-i18n="prof1.d">Gestão de controle de acesso e resolução de incidentes em tempo real.</p>
-        </div>
+    <div class="rodape-topo">
+      <div>
+        <p class="rodape-nome">Gildean Monteiro</p>
+        <p class="mono-rotulo" data-i18n="ft.sub">Desenvolvedor Full Stack · Petrópolis, RJ</p>
       </div>
-      <div class="log-item reveal">
-        <span class="log-data"><span data-i18n="prof2.d1">03/2025 → 07/2025</span><span data-i18n="prof2.d2">≈ 5 meses</span></span>
-        <div class="log-info">
-          <h3 data-i18n-html="prof2.r">Recepcionista <em>· Odonto Company — Petrópolis, RJ</em></h3>
-          <p data-i18n="prof2.d">Atendimento presencial, telefônico e virtual; agendamentos.</p>
-        </div>
-      </div>
-      <div class="log-item reveal">
-        <span class="log-data"><span data-i18n="prof3.d1">06/2024 → 03/2025</span><span data-i18n="prof3.d2">≈ 10 meses</span></span>
-        <div class="log-info">
-          <h3 data-i18n-html="prof3.r">Jovem Aprendiz <em>· CIEE — Petrópolis, RJ</em></h3>
-          <p data-i18n="prof3.d">Atendimento a clientes e suporte às rotinas administrativas.</p>
-        </div>
-      </div>
-      <div class="log-item reveal">
-        <span class="log-data"><span data-i18n="prof4.d1">02/2022 → 12/2023</span><span data-i18n="prof4.d2">≈ 2 anos de liderança</span></span>
-        <div class="log-info">
-          <h3 data-i18n-html="prof4.r">Sub-Gerente <em>· Mega Lanches — São Paulo, SP</em></h3>
-          <p data-i18n="prof4.d">Liderança de operação de alto volume: delegação e melhorias de processo.</p>
-        </div>
-      </div>
-      <div class="log-item reveal">
-        <span class="log-data"><span data-i18n="prof5.d1">08/2018 → 12/2020</span><span data-i18n="prof5.d2">≈ 2 anos e 5 meses</span></span>
-        <div class="log-info">
-          <h3 data-i18n-html="prof5.r">Atendente <em>· Mega Lanches — São Paulo, SP</em></h3>
-          <p data-i18n="prof5.d">Atendimento ágil e operação de máquinas com foco em qualidade.</p>
-        </div>
+      <div class="rodape-sociais">
+        <a href="https://www.linkedin.com/in/gm-nascimento" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24" width="15" height="15" aria-hidden="true"><path fill="currentColor" d="M6.9 8.6H3.6V21h3.3V8.6ZM5.2 3a1.9 1.9 0 1 0 0 3.8 1.9 1.9 0 0 0 0-3.8ZM21 13.9c0-3.4-1.8-5.5-4.6-5.5a4 4 0 0 0-3.6 2V8.6H9.6V21h3.3v-6.5c0-1.7.9-2.8 2.3-2.8s2.2 1 2.2 2.8V21H21v-7.1Z"/></svg></a>
+        <a href="https://github.com/Everett-gi" target="_blank" rel="noopener" aria-label="GitHub"><svg viewBox="0 0 24 24" width="15" height="15" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-3.2 19.5c.5.1.7-.2.7-.5v-1.7c-2.8.6-3.4-1.3-3.4-1.3-.5-1.2-1.1-1.5-1.1-1.5-.9-.6.1-.6.1-.6 1 .1 1.5 1 1.5 1 .9 1.5 2.3 1.1 2.9.8.1-.6.3-1.1.6-1.3-2.2-.3-4.6-1.1-4.6-5a3.9 3.9 0 0 1 1-2.7 3.6 3.6 0 0 1 .1-2.7s.8-.3 2.8 1a9.6 9.6 0 0 1 5 0c1.9-1.3 2.8-1 2.8-1 .5 1.4.2 2.4.1 2.7a3.9 3.9 0 0 1 1 2.7c0 3.9-2.3 4.7-4.6 5 .4.3.7.9.7 1.9V21c0 .3.2.6.7.5A10 10 0 0 0 12 2Z"/></svg></a>
       </div>
     </div>
-
-    <div class="log" id="log-acad">
-      <div class="log-item reveal">
-        <span class="log-data"><span data-i18n="acad1.d1">02/2025 → 03/2026</span><span data-i18n="acad1.d2">≈ 13 meses de treino</span></span>
-        <div class="log-info">
-          <h3 data-i18n-html="acad1.r">Ethical Hacking / Cibersegurança <em>· HackerX</em></h3>
-          <p data-i18n="acad1.d">Redes, OSINT, análise de vulnerabilidades, Pentest web, criptografia.</p>
-        </div>
+    <div class="rodape-colunas">
+      <div>
+        <p class="rodape-titulo" data-i18n="ft.nav">Navegação</p>
+        <ul><li><a href="#inicio" data-i18n="nav.inicio">Início</a></li><li><a href="#sobre" data-i18n="nav.sobre">Sobre</a></li><li><a href="#habilidades" data-i18n="nav.habilidades">Habilidades</a></li><li><a href="#projetos" data-i18n="nav.projetos">Projetos</a></li><li><a href="#trajetoria" data-i18n="nav.trajetoria">Trajetória</a></li><li><a href="#faq" data-i18n="nav.faq">FAQ</a></li></ul>
       </div>
-      <div class="log-item reveal">
-        <span class="log-data"><span data-i18n="acad2.d1">05/2025 → 07/2025</span><span data-i18n="acad2.d2">≈ 3 meses intensivos</span></span>
-        <div class="log-info">
-          <h3 data-i18n-html="acad2.r">Residência em TIC <em>· Serratec — Petrópolis, RJ</em></h3>
-          <p data-i18n="acad2.d">Imersão em IA, IoT, Python e Cloud.</p>
-        </div>
+      <div>
+        <p class="rodape-titulo" data-i18n="ft.proj">Projetos e credenciais</p>
+        <ul><li><a href="https://atleticadragoes.com.br" target="_blank" rel="noopener">Hub Atlética Dragões</a></li><li><a href="certificados.html" data-i18n="ft.certs">Todos os certificados</a></li><li><a href="curriculo/Gildean_Monteiro_Resume_EN.pdf" download data-i18n="ft.resumeEn">Resume in English (PDF)</a></li></ul>
       </div>
-      <div class="log-item reveal">
-        <span class="log-data"><span data-i18n="acad3.d1">05/2024 → atual</span><span data-i18n="acad3.d2">≈ 2 anos e contando</span></span>
-        <div class="log-info">
-          <h3 data-i18n-html="acad3.r">Conselheiro Acadêmico &amp; Presidente da Atlética Dragões <em>· FAETERJ</em></h3>
-          <p data-i18n="acad3.d">Coordenação de atividades e ponte entre estudantes e administração.</p>
-        </div>
-      </div>
-      <div class="log-item reveal">
-        <span class="log-data"><span data-i18n="acad4.d1">03/2024 → em curso</span><span data-i18n="acad4.d2">≈ 2 anos e contando</span></span>
-        <div class="log-info">
-          <h3 data-i18n-html="acad4.r">Graduação em TIC <em>· FAETERJ — Petrópolis, RJ</em></h3>
-          <p data-i18n="acad4.d">Redes, integração de sistemas, servidores e tecnologias emergentes.</p>
-        </div>
+      <div>
+        <p class="rodape-titulo" data-i18n="ft.ct">Contato</p>
+        <ul><li><a href="https://wa.me/5524981312273" target="_blank" rel="noopener">WhatsApp (24) 98131-2273</a></li><li><a href="tel:+5511982953630" data-i18n="ft.tel">Ligações (11) 98295-3630</a></li><li><a href="mailto:gmonteiro0808@gmail.com">gmonteiro0808@gmail.com</a></li><li><a href="https://www.linkedin.com/in/gm-nascimento" target="_blank" rel="noopener">LinkedIn</a></li><li><a href="https://github.com/Everett-gi" target="_blank" rel="noopener">GitHub</a></li></ul>
       </div>
     </div>
-  </div>
-</section>
-
-<!-- ============ SEÇÃO 07 ============ -->
-<section class="contato" id="contato">
-  <div class="container contato-grid">
-    <div>
-      <p class="secao-tag" data-i18n="s7.tag">SEÇÃO 07 / CONTATO</p>
-      <h2 class="titulo" data-i18n="s7.title">Vamos conversar</h2>
-      <p class="contato-txt" data-i18n="s7.text">
-        Estou em busca da minha primeira oportunidade de estágio em TI — aberto a qualquer área.
-      </p>
-      <a class="btn btn-whats btn-troca" href="https://wa.me/5511982953630?text=Oi%2C%20Gildean!%20Vi%20seu%20portf%C3%B3lio%20e%20gostaria%20de%20conversar." target="_blank" rel="noopener">
-        <span class="rotulos"><span data-i18n="contact.whats">↗ Abrir canal no WhatsApp</span><span data-i18n="contact.whatsA">resposta rápida garantida ✓</span></span>
-      </a>
-    </div>
-    <ul class="canais">
-      <li><a href="mailto:gmonteiro0808@gmail.com"><b>E-MAIL</b><span class="pontos"></span><span>gmonteiro0808@gmail.com</span></a></li>
-      <li><a href="https://www.linkedin.com/in/gm-nascimento" target="_blank" rel="noopener"><b>LINKEDIN</b><span class="pontos"></span><span>in/gm-nascimento</span></a></li>
-      <li><a href="https://github.com/Everett-gi" target="_blank" rel="noopener"><b>GITHUB</b><span class="pontos"></span><span>Everett-gi</span></a></li>
-      <li><a href="https://wa.me/5511982953630" target="_blank" rel="noopener"><b data-i18n="ch.phone">TELEFONE</b><span class="pontos"></span><span>(11) 98295-3630</span></a></li>
-    </ul>
-  </div>
-</section>
-
-<!-- ============ FOOTER ============ -->
-<footer>
-  <div class="footer-inner">
-    <span data-i18n="footer.end">— OBRIGADO PELA VISITA —</span>
-    <span>REF: GM-2026-001 · © 2026 Gildean Monteiro do Nascimento</span>
-    <span><span data-i18n="footer.signed">assinado:</span> <a href="https://github.com/Everett-gi" target="_blank" rel="noopener">G. Monteiro</a></span>
+    <p class="rodape-base" data-i18n="ft.base">© 2026 Gildean Monteiro do Nascimento · Feito à mão com HTML, CSS e JavaScript, sem cookies e sem rastreadores.</p>
   </div>
 </footer>
+
+<!-- CTA fixo no celular -->
+<div class="cta-movel">
+  <a class="btn btn-whats" href="https://wa.me/5524981312273" target="_blank" rel="noopener" data-i18n="mob.whats">WhatsApp</a>
+  <a class="btn btn-ghost" href="curriculo/Gildean_Monteiro_Curriculo.pdf" download data-i18n-href="hero.cvHref" data-i18n="mob.cv">Currículo</a>
+</div>
 
 <script src="js/i18n.js"></script>
 <script src="js/main.js"></script>

@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Resume · Gildean Monteiro do Nascimento</title>
+<meta name="robots" content="noindex">
+<!--
+  English resume source. The PDF is generated from this file (Chromium, A4):
+    node curriculo/gerar-pdf.js
+  Keep it in sync with curriculo.html when the content changes.
+-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  @page { size: A4; margin: 14mm 15mm 13mm; }
+  :root { --ink:#16110f; --ink-2:#3b3431; --muted:#6b625d; --line:#e4dcd5; --brand:#c8341f; }
+  * { box-sizing: border-box; }
+  html { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  body { margin: 0; font-family: 'Geist', 'Liberation Sans', Arial, sans-serif; color: var(--ink-2); font-size: 9.6pt; line-height: 1.42; }
+  .folha { max-width: 180mm; margin: 0 auto; }
+  a { color: inherit; text-decoration: none; }
+
+  header { padding-bottom: 9pt; border-bottom: 1.4pt solid var(--ink); margin-bottom: 9pt; }
+  h1 { font-size: 21pt; line-height: 1.05; letter-spacing: -0.02em; color: var(--ink); margin: 0 0 3pt; font-weight: 700; }
+  .cargo { font-size: 11pt; font-weight: 600; color: var(--brand); margin: 0 0 6pt; }
+  .contato { font-size: 8.8pt; color: var(--ink-2); margin: 0; }
+  .contato span + span::before { content: "·"; color: var(--muted); margin: 0 5pt; }
+
+  section { margin-bottom: 8.5pt; }
+  section.inteira { break-inside: avoid; }
+  h2 { break-after: avoid; }
+  h2 { font-size: 8.4pt; letter-spacing: .14em; text-transform: uppercase; color: var(--ink); margin: 0 0 5pt; padding-bottom: 2.5pt; border-bottom: .6pt solid var(--line); font-weight: 700; }
+  h2::before { content: ""; display: inline-block; width: 6pt; height: 6pt; background: var(--brand); margin-right: 6pt; vertical-align: 0.5pt; }
+
+  .resumo { margin: 0; text-align: justify; hyphens: auto; }
+  strong { color: var(--ink); font-weight: 600; }
+
+  .item { margin-bottom: 6pt; break-inside: avoid; }
+  .item-topo { display: flex; justify-content: space-between; gap: 10pt; align-items: baseline; }
+  .item-titulo { font-size: 10pt; font-weight: 600; color: var(--ink); margin: 0; }
+  .item-titulo em { font-style: normal; font-weight: 500; color: var(--ink-2); }
+  .item-data { font-size: 8.6pt; color: var(--muted); white-space: nowrap; font-variant-numeric: tabular-nums; }
+  .item-sub { font-size: 8.8pt; color: var(--muted); margin: 0 0 2pt; }
+  ul { margin: 2pt 0 0; padding-left: 12pt; }
+  li { margin-bottom: 1.6pt; }
+  li::marker { color: var(--brand); }
+
+  .compacto { margin: 0; padding: 0; list-style: none; }
+  .compacto li { display: flex; justify-content: space-between; gap: 10pt; margin-bottom: 2pt; }
+  .compacto li b { color: var(--ink); font-weight: 600; }
+
+  .skills { display: grid; grid-template-columns: 30mm 1fr; column-gap: 8pt; row-gap: 2pt; margin: 0; }
+  .skills dt { font-weight: 600; color: var(--ink); }
+  .skills dd { margin: 0; }
+
+  .rodape { font-size: 8.4pt; color: var(--muted); margin-top: 6pt; }
+
+  @media screen {
+    body { background: #efe9e3; padding: 24px 12px; }
+    .folha { background: #fff; padding: 14mm 15mm; box-shadow: 0 12px 40px -18px rgba(0,0,0,.35); max-width: 210mm; }
+  }
+</style>
+</head>
+<body>
+<main class="folha">
+
+  <header>
+    <h1>Gildean Monteiro do Nascimento</h1>
+    <p class="cargo">Junior Full Stack Developer · Java / Spring Boot · Cloud · Cybersecurity</p>
+    <p class="contato">
+      <span>Petrópolis, RJ, Brazil</span>
+      <span>WhatsApp +55 24 98131-2273</span>
+      <span>Calls +55 11 98295-3630</span>
+      <span><a href="mailto:gmonteiro0808@gmail.com">gmonteiro0808@gmail.com</a></span>
+    </p>
+    <p class="contato">
+      <span><a href="https://www.linkedin.com/in/gm-nascimento">linkedin.com/in/gm-nascimento</a></span>
+      <span><a href="https://github.com/Everett-gi">github.com/Everett-gi</a></span>
+      <span><a href="https://portfolio-ten-livid-56.vercel.app">portfolio-ten-livid-56.vercel.app</a></span>
+    </p>
+  </header>
+
+  <section>
+    <h2>Summary</h2>
+    <p class="resumo">
+      Full stack developer and IT undergraduate (FAETERJ) who <strong>builds and runs a real system in production</strong>.
+      I own <strong>Hub Atlética Dragões</strong>, the platform used by FAETERJ's IT students, with a Java 21 / Spring Boot back end,
+      PostgreSQL, <strong>1,275 automated tests</strong> and CI/CD with GitHub Actions on Oracle Cloud. Security is my edge:
+      <strong>Ethical Hacking certification (HackerX)</strong>, ongoing training in the <strong>Hackers do Bem</strong> program
+      (Brazilian Ministry of Science and Technology / RNP) and hands-on work with JWT, OAuth2, CSP/HSTS, rate limiting and LGPD
+      (Brazil's GDPR). 6+ years of work experience in customer service and leadership (assistant manager of a 700+ customers/day
+      operation) and C2 English. Looking for an <strong>internship or junior role</strong> in software development, infrastructure
+      or information security.
+    </p>
+  </section>
+
+  <section>
+    <h2>Projects</h2>
+
+    <div class="item">
+      <div class="item-topo">
+        <p class="item-titulo">Hub Atlética Dragões <em>· Full Stack Developer (own product)</em></p>
+        <span class="item-data">2025 – present</span>
+      </div>
+      <p class="item-sub">atleticadragoes.com.br · Java 21, Spring Boot 3.5, Spring Security, PostgreSQL 15, Flyway, Docker, Caddy, Oracle Cloud</p>
+      <ul>
+        <li>Designed, built and maintain the web platform (PWA) for FAETERJ's IT students, with <strong>80+ active accounts</strong>:
+          grades and pass simulator, class schedule, study content, digital student ID with verifiable QR code, room booking,
+          e-sports tournaments and an AI assistant.</li>
+        <li>Back end with <strong>~290 REST endpoints</strong>, 46 JPA entities and a schema versioned in <strong>46 Flyway migrations</strong>;
+          <strong>1,275 automated tests</strong> (JUnit 5 and Mockito).</li>
+        <li>Migrated the infrastructure from AWS EC2 to Oracle Cloud, <strong>cutting the monthly cost from ~R$170 to zero</strong> with about
+          2 minutes of downtime; set up CI/CD with GitHub Actions + GHCR and daily backups to Cloudflare R2 with tested restores.</li>
+        <li>Security and privacy: JWT + BCrypt, Google sign-in (OAuth2), default-deny route protection, rate limiting, CSP/HSTS headers,
+          email verification, enumeration-resistant password reset, and user data export and deletion. In my own security reviews
+          I found and fixed a stored XSS and an endpoint that exposed data without authentication.</li>
+        <li>Integrated an AI assistant (LLM via Groq) with a deterministic FAQ and a cache that answer the most common questions at no
+          AI cost, graceful degradation when the quota runs out and a daily health check of the model.</li>
+      </ul>
+    </div>
+
+    <div class="item">
+      <div class="item-topo">
+        <p class="item-titulo">OmniRate <em>· Full Stack Developer (personal project)</em></p>
+        <span class="item-data">2025</span>
+      </div>
+      <p class="item-sub">Java 21, Spring Boot, React 18, Vite, PostgreSQL (Neon), Docker Compose, Caddy, Oracle Cloud</p>
+      <ul>
+        <li>Pop culture review platform (movies, series, games, books, albums and comics), which I deployed on Oracle Cloud with Docker Compose and Caddy.</li>
+        <li>JWT authentication with BCrypt, Flyway migrations, LGPD-compliant terms acceptance and a React 18 + Vite front end.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <h2>Work experience</h2>
+
+    <div class="item">
+      <div class="item-topo">
+        <p class="item-titulo">Estapar <em>· Parking Operations Controller · Petrópolis, RJ</em></p>
+        <span class="item-data">Nov 2025 – present</span>
+      </div>
+      <ul>
+        <li>Operate access control and traffic monitoring systems in a high-traffic facility, resolving incidents in real time
+          according to security protocols.</li>
+        <li>Completed Academia Estapar's cybersecurity awareness track (social engineering, phishing, malware and insider threats).</li>
+      </ul>
+    </div>
+
+    <div class="item">
+      <div class="item-topo">
+        <p class="item-titulo">Mega Lanches <em>· Assistant Manager · São Paulo, SP</em></p>
+        <span class="item-data">Feb 2022 – Dec 2023</span>
+      </div>
+      <ul>
+        <li>Led the operation of a restaurant serving <strong>700+ customers a day</strong>: team scheduling and delegation, resource
+          management and process improvement focused on communication and efficiency.</li>
+        <li>Promoted after working as a Crew Member (Aug 2018 – Dec 2020): fast customer service and equipment operation with a focus on quality.</li>
+      </ul>
+    </div>
+
+    <ul class="compacto">
+      <li><span><b>Odonto Company</b> · Receptionist · Petrópolis, RJ: patient service and scheduling.</span><span class="item-data">Mar 2025 – Jul 2025</span></li>
+      <li><span><b>CIEE</b> · Young Apprentice · Petrópolis, RJ: customer service and administrative support.</span><span class="item-data">Jun 2024 – Mar 2025</span></li>
+    </ul>
+  </section>
+
+  <section class="inteira">
+    <h2>Education</h2>
+
+    <div class="item">
+      <div class="item-topo">
+        <p class="item-titulo">FAETERJ Petrópolis <em>· Associate degree in Information and Communication Technology</em></p>
+        <span class="item-data">Mar 2024 – ongoing</span>
+      </div>
+      <ul>
+        <li>Academic Council member and President of Atlética Dragões, the student association (May 2024 – present): I represent students
+          before the school board and run events and championships, including the 1st Copa Dragões de Valorant (6 teams), managed through the Hub.</li>
+      </ul>
+    </div>
+
+    <div class="item">
+      <div class="item-topo">
+        <p class="item-titulo">Serratec <em>· Technology Residency: Python, IoT, Artificial Intelligence and Cloud</em></p>
+        <span class="item-data">May 2025 – Jul 2025</span>
+      </div>
+      <p class="item-sub">Intensive program with hands-on team projects.</p>
+    </div>
+  </section>
+
+  <section class="inteira">
+    <h2>Courses and certifications</h2>
+    <ul>
+      <li><strong>Hackers do Bem (MCTI / RNP)</strong>: national cybersecurity training program, <strong>in progress since Apr 2026</strong>.</li>
+      <li><strong>Ethical Hacking &amp; Cybersecurity, HackerX</strong> (final certification, Mar 2026): 17 modules, including XSS, SQL injection,
+        vulnerability scanning and reporting, sniffing and MITM, password cracking, Wi-Fi WPA/WEP and AI for security.</li>
+      <li><strong>Oracle Next Education (Oracle + Alura)</strong>: Beginner Programming Track G8, 70 h (2025): JavaScript logic,
+        responsive HTML/CSS, Git and GitHub.</li>
+      <li><strong>Fundação Bradesco</strong>: Information Technology Security (12 h) and Brazilian Data Protection Law, LGPD (2 h), 2024.</li>
+      <li><strong>Hashtag Treinamentos</strong>: AI Agents Immersion (8 h), 2026.</li>
+      <li><strong>EF SET English Certificate</strong>: C2 Proficient, 82/100 (2024).</li>
+    </ul>
+  </section>
+
+  <section class="inteira">
+    <h2>Technical skills</h2>
+    <dl class="skills">
+      <dt>Languages</dt><dd>Java, Python, JavaScript, SQL</dd>
+      <dt>Back end</dt><dd>Spring Boot, Spring Security, REST APIs, JPA/Hibernate, Flyway, JUnit 5, Mockito</dd>
+      <dt>Front end</dt><dd>HTML, CSS, JavaScript, React 18, Vite, PWA</dd>
+      <dt>Data</dt><dd>PostgreSQL (modeling, indexes, versioned migrations)</dd>
+      <dt>Cloud and DevOps</dt><dd>Oracle Cloud, AWS EC2, Linux, Docker and Docker Compose, Caddy, GitHub Actions (CI/CD), Git, Cloudflare R2</dd>
+      <dt>Security</dt><dd>OWASP Top 10, web pentesting, OSINT, JWT/BCrypt, OAuth2, CSP/HSTS, LGPD</dd>
+      <dt>AI</dt><dd>LLM integration (Groq, Anthropic), RAG, AI-assisted development</dd>
+      <dt>Spoken languages</dt><dd>Portuguese (native), English C2 (EF SET 82/100), Italian A1</dd>
+    </dl>
+    <p class="rodape">Available for on-site, hybrid or remote work. Full list of certificates at portfolio-ten-livid-56.vercel.app/certificados</p>
+  </section>
+
+</main>
+</body>
+</html>

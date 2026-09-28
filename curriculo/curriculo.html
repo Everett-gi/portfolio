@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Currículo · Gildean Monteiro do Nascimento</title>
+<meta name="robots" content="noindex">
+<!--
+  Fonte do currículo. O PDF é gerado a partir deste arquivo (Chromium, A4):
+    node curriculo/gerar-pdf.js
+  Coluna única e texto real (nada em imagem): é o formato que os sistemas de
+  triagem (ATS) leem sem perder informação.
+-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  @page { size: A4; margin: 14mm 15mm 13mm; }
+  :root { --ink:#16110f; --ink-2:#3b3431; --muted:#6b625d; --line:#e4dcd5; --brand:#c8341f; }
+  * { box-sizing: border-box; }
+  html { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  body { margin: 0; font-family: 'Geist', 'Liberation Sans', Arial, sans-serif; color: var(--ink-2); font-size: 9.6pt; line-height: 1.42; }
+  .folha { max-width: 180mm; margin: 0 auto; }
+  a { color: inherit; text-decoration: none; }
+
+  header { padding-bottom: 9pt; border-bottom: 1.4pt solid var(--ink); margin-bottom: 9pt; }
+  h1 { font-size: 21pt; line-height: 1.05; letter-spacing: -0.02em; color: var(--ink); margin: 0 0 3pt; font-weight: 700; }
+  .cargo { font-size: 11pt; font-weight: 600; color: var(--brand); margin: 0 0 6pt; }
+  .contato { font-size: 8.8pt; color: var(--ink-2); margin: 0; }
+  .contato span + span::before { content: "·"; color: var(--muted); margin: 0 5pt; }
+
+  section { margin-bottom: 8.5pt; }
+  section.inteira { break-inside: avoid; }
+  h2 { break-after: avoid; }
+  h2 { font-size: 8.4pt; letter-spacing: .14em; text-transform: uppercase; color: var(--ink); margin: 0 0 5pt; padding-bottom: 2.5pt; border-bottom: .6pt solid var(--line); font-weight: 700; }
+  h2::before { content: ""; display: inline-block; width: 6pt; height: 6pt; background: var(--brand); margin-right: 6pt; vertical-align: 0.5pt; }
+
+  .resumo { margin: 0; text-align: justify; hyphens: auto; }
+  strong { color: var(--ink); font-weight: 600; }
+
+  .item { margin-bottom: 6pt; break-inside: avoid; }
+  .item-topo { display: flex; justify-content: space-between; gap: 10pt; align-items: baseline; }
+  .item-titulo { font-size: 10pt; font-weight: 600; color: var(--ink); margin: 0; }
+  .item-titulo em { font-style: normal; font-weight: 500; color: var(--ink-2); }
+  .item-data { font-size: 8.6pt; color: var(--muted); white-space: nowrap; font-variant-numeric: tabular-nums; }
+  .item-sub { font-size: 8.8pt; color: var(--muted); margin: 0 0 2pt; }
+  ul { margin: 2pt 0 0; padding-left: 12pt; }
+  li { margin-bottom: 1.6pt; }
+  li::marker { color: var(--brand); }
+
+  .compacto { margin: 0; padding: 0; list-style: none; }
+  .compacto li { display: flex; justify-content: space-between; gap: 10pt; margin-bottom: 2pt; }
+  .compacto li b { color: var(--ink); font-weight: 600; }
+
+  .skills { display: grid; grid-template-columns: 27mm 1fr; column-gap: 8pt; row-gap: 2pt; margin: 0; }
+  .skills dt { font-weight: 600; color: var(--ink); }
+  .skills dd { margin: 0; }
+
+  .rodape { font-size: 8.4pt; color: var(--muted); margin-top: 6pt; }
+
+  @media screen {
+    body { background: #efe9e3; padding: 24px 12px; }
+    .folha { background: #fff; padding: 14mm 15mm; box-shadow: 0 12px 40px -18px rgba(0,0,0,.35); max-width: 210mm; }
+  }
+</style>
+</head>
+<body>
+<main class="folha">
+
+  <header>
+    <h1>Gildean Monteiro do Nascimento</h1>
+    <p class="cargo">Desenvolvedor Full Stack Júnior · Java / Spring Boot · Cloud · Cibersegurança</p>
+    <p class="contato">
+      <span>Petrópolis, RJ</span>
+      <span>WhatsApp (24) 98131-2273</span>
+      <span>Ligações (11) 98295-3630</span>
+      <span><a href="mailto:gmonteiro0808@gmail.com">gmonteiro0808@gmail.com</a></span>
+    </p>
+    <p class="contato">
+      <span><a href="https://www.linkedin.com/in/gm-nascimento">linkedin.com/in/gm-nascimento</a></span>
+      <span><a href="https://github.com/Everett-gi">github.com/Everett-gi</a></span>
+      <span><a href="https://portfolio-ten-livid-56.vercel.app">portfolio-ten-livid-56.vercel.app</a></span>
+    </p>
+  </header>
+
+  <section>
+    <h2>Resumo profissional</h2>
+    <p class="resumo">
+      Desenvolvedor full stack em formação (TIC · FAETERJ) que <strong>constrói e opera um sistema real em produção</strong>.
+      Sou responsável pelo <strong>Hub Atlética Dragões</strong>, plataforma usada pelos alunos de TIC da FAETERJ, com back-end
+      Java 21 / Spring Boot, PostgreSQL, <strong>1.275 testes automatizados</strong> e CI/CD com GitHub Actions na Oracle Cloud.
+      Segurança é meu diferencial: certificação em <strong>Ethical Hacking (HackerX)</strong>, formação em andamento no programa
+      <strong>Hackers do Bem (MCTI/RNP)</strong> e prática aplicada em JWT, OAuth2, CSP/HSTS, rate limiting e LGPD.
+      Somo mais de 6 anos de experiência profissional em atendimento e liderança (subgerente de uma operação com 700+ clientes/dia)
+      e inglês C2. Busco <strong>estágio ou vaga júnior</strong> em desenvolvimento, infraestrutura ou segurança da informação.
+    </p>
+  </section>
+
+  <section>
+    <h2>Projetos</h2>
+
+    <div class="item">
+      <div class="item-topo">
+        <p class="item-titulo">Hub Atlética Dragões <em>· Desenvolvedor Full Stack (projeto próprio)</em></p>
+        <span class="item-data">2025 – atual</span>
+      </div>
+      <p class="item-sub">atleticadragoes.com.br · Java 21, Spring Boot 3.5, Spring Security, PostgreSQL 15, Flyway, Docker, Caddy, Oracle Cloud</p>
+      <ul>
+        <li>Concebi, desenvolvo e mantenho a plataforma web (PWA) dos alunos de TIC da FAETERJ, com <strong>80+ contas ativas</strong>:
+          notas e simulador de aprovação, cronograma, conteúdos de estudo, carteirinha digital com QR verificável, reserva de salas,
+          torneios de e-sports e assistente de IA.</li>
+        <li>Back-end com <strong>~290 endpoints REST</strong>, 46 entidades JPA e schema versionado em <strong>46 migrações Flyway</strong>;
+          <strong>1.275 testes automatizados</strong> (JUnit 5 e Mockito).</li>
+        <li>Migrei a infraestrutura da AWS EC2 para a Oracle Cloud, <strong>reduzindo o custo mensal de ~R$ 170 para R$ 0</strong> com cerca de
+          2 minutos de indisponibilidade; implantei CI/CD com GitHub Actions + GHCR e backups diários no Cloudflare R2 com restauração testada.</li>
+        <li>Segurança e LGPD: JWT + BCrypt, login Google (OAuth2), rotas protegidas por padrão (default-deny), rate limiting, cabeçalhos
+          CSP/HSTS, verificação de e-mail, recuperação de senha resistente a enumeração, exportação e exclusão de dados do titular.
+          Em varreduras próprias, encontrei e corrigi um XSS armazenado e uma rota que expunha dados sem autenticação.</li>
+        <li>Integrei um assistente de IA (LLM via Groq) com FAQ determinístico e cache, que respondem às dúvidas mais frequentes
+          sem custo de IA, degradação controlada ao atingir a cota e teste de saúde diário do modelo.</li>
+      </ul>
+    </div>
+
+    <div class="item">
+      <div class="item-topo">
+        <p class="item-titulo">OmniRate <em>· Desenvolvedor Full Stack (projeto pessoal)</em></p>
+        <span class="item-data">2025</span>
+      </div>
+      <p class="item-sub">Java 21, Spring Boot, React 18, Vite, PostgreSQL (Neon), Docker Compose, Caddy, Oracle Cloud</p>
+      <ul>
+        <li>Plataforma de avaliações de cultura pop (filmes, séries, jogos, livros, álbuns e HQs), que publiquei na Oracle Cloud com Docker Compose e Caddy.</li>
+        <li>Autenticação JWT com BCrypt, migrações Flyway, aceite de termos em conformidade com a LGPD e front-end em React 18 com Vite.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <h2>Experiência profissional</h2>
+
+    <div class="item">
+      <div class="item-topo">
+        <p class="item-titulo">Estapar <em>· Controlador de Estacionamento · Petrópolis, RJ</em></p>
+        <span class="item-data">nov/2025 – atual</span>
+      </div>
+      <ul>
+        <li>Opero sistemas de controle de acesso e monitoramento de fluxo em ambiente de grande circulação, resolvendo incidentes em
+          tempo real conforme os protocolos de segurança.</li>
+        <li>Concluí a trilha de conscientização em cibersegurança da Academia Estapar (engenharia social, phishing, malware e ameaças internas).</li>
+      </ul>
+    </div>
+
+    <div class="item">
+      <div class="item-topo">
+        <p class="item-titulo">Mega Lanches <em>· Subgerente · São Paulo, SP</em></p>
+        <span class="item-data">fev/2022 – dez/2023</span>
+      </div>
+      <ul>
+        <li>Liderei a operação de uma unidade com <strong>700+ clientes por dia</strong>: escala e delegação da equipe, gestão de recursos e
+          melhoria de processos, com foco em comunicação e eficiência.</li>
+        <li>Promovido após atuar como Atendente (ago/2018 – dez/2020), com atendimento ágil e operação de equipamentos com foco em qualidade.</li>
+      </ul>
+    </div>
+
+    <ul class="compacto">
+      <li><span><b>Odonto Company</b> · Recepcionista · Petrópolis, RJ: atendimento e agendamentos.</span><span class="item-data">mar/2025 – jul/2025</span></li>
+      <li><span><b>CIEE</b> · Jovem Aprendiz · Petrópolis, RJ: atendimento e rotinas administrativas.</span><span class="item-data">jun/2024 – mar/2025</span></li>
+    </ul>
+  </section>
+
+  <section class="inteira">
+    <h2>Formação acadêmica</h2>
+
+    <div class="item">
+      <div class="item-topo">
+        <p class="item-titulo">FAETERJ Petrópolis <em>· Tecnologia da Informação e Comunicação (TIC)</em></p>
+        <span class="item-data">mar/2024 – em andamento</span>
+      </div>
+      <ul>
+        <li>Conselheiro Acadêmico e Presidente da Atlética Dragões (mai/2024 – atual): represento os estudantes junto à direção e
+          coordeno eventos e campeonatos, incluindo a 1ª Copa Dragões de Valorant (6 times), gerida pelo Hub.</li>
+      </ul>
+    </div>
+
+    <div class="item">
+      <div class="item-topo">
+        <p class="item-titulo">Serratec <em>· Residência em Tecnologia: Python, IoT, Inteligência Artificial e Cloud</em></p>
+        <span class="item-data">mai/2025 – jul/2025</span>
+      </div>
+      <p class="item-sub">Formação intensiva com projetos práticos em equipe.</p>
+    </div>
+  </section>
+
+  <section class="inteira">
+    <h2>Cursos e certificações</h2>
+    <ul>
+      <li><strong>Hackers do Bem (MCTI / RNP)</strong>: formação em cibersegurança, <strong>em andamento desde abr/2026</strong>.</li>
+      <li><strong>Ethical Hacking &amp; Cybersecurity, HackerX</strong> (certificação final, mar/2026): 17 módulos, incluindo XSS, SQL Injection,
+        varredura e relatório de vulnerabilidades, sniffing e MITM, quebra de senhas, Wi-Fi WPA/WEP e IA aplicada à segurança.</li>
+      <li><strong>Oracle Next Education (Oracle + Alura)</strong>: Formação Iniciante em Programação G8, 70 h (2025): lógica com JavaScript,
+        HTML/CSS responsivo, Git e GitHub.</li>
+      <li><strong>Fundação Bradesco</strong>: Segurança em Tecnologia da Informação (12 h) e Lei Geral de Proteção de Dados (2 h), 2024.</li>
+      <li><strong>Hashtag Treinamentos</strong>: Imersão Agentes de IA (8 h), 2026.</li>
+      <li><strong>EF SET English Certificate</strong>: C2 Proficient, 82/100 (2024).</li>
+    </ul>
+  </section>
+
+  <section class="inteira">
+    <h2>Competências técnicas</h2>
+    <dl class="skills">
+      <dt>Linguagens</dt><dd>Java, Python, JavaScript, SQL</dd>
+      <dt>Back-end</dt><dd>Spring Boot, Spring Security, APIs REST, JPA/Hibernate, Flyway, JUnit 5, Mockito</dd>
+      <dt>Front-end</dt><dd>HTML, CSS, JavaScript, React 18, Vite, PWA</dd>
+      <dt>Dados</dt><dd>PostgreSQL (modelagem, índices, migrações versionadas)</dd>
+      <dt>Cloud e DevOps</dt><dd>Oracle Cloud, AWS EC2, Linux, Docker e Docker Compose, Caddy, GitHub Actions (CI/CD), Git, Cloudflare R2</dd>
+      <dt>Segurança</dt><dd>OWASP Top 10, Pentest web, OSINT, JWT/BCrypt, OAuth2, CSP/HSTS, LGPD</dd>
+      <dt>IA</dt><dd>Integração com LLMs (Groq, Anthropic), RAG, desenvolvimento assistido por IA</dd>
+      <dt>Idiomas</dt><dd>Português (nativo), Inglês C2 (EF SET 82/100), Italiano A1</dd>
+    </dl>
+    <p class="rodape">Disponível para atuação presencial, híbrida ou remota. Certificados completos em portfolio-ten-livid-56.vercel.app/certificados</p>
+  </section>
+
+</main>
+</body>
+</html>
