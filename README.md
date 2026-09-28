@@ -1,107 +1,80 @@
-# Dossiê GM-2026 — Portfólio de Gildean Monteiro
+# Portfólio · Gildean Monteiro
 
-Portfólio pessoal com conceito de **relatório de reconhecimento (recon report)**: o visitante "investiga" o alvo — perfil, capacidades, evidências (projetos) e registro de atividade (experiência).
+Portfólio pessoal de Gildean Monteiro do Nascimento, desenvolvedor full stack júnior (Java, Spring Boot, PostgreSQL, Cloud e cibersegurança).
 
-**Stack:** HTML + CSS + JavaScript puros. Zero dependências, zero build. Deploy estático na Vercel com cabeçalhos de segurança configurados (CSP, HSTS, X-Frame-Options — como todo portfólio de cibersegurança deveria ter).
+**Stack:** HTML, CSS e JavaScript puros. Sem dependências e sem build. Deploy estático na Vercel com cabeçalhos de segurança (CSP, HSTS, X-Frame-Options).
+
+**Design:** fundo escuro quente, coral de destaque, títulos em Geist com uma palavra em Instrument Serif itálico e rótulos em JetBrains Mono, com seções numeradas (§ 01, § 02…). Inspirado no layout de thainanprado.com.br; todo o conteúdo é meu.
 
 ## Estrutura
 
 ```
-gildean-portfolio/
-├── index.html           # dossiê principal (7 seções)
-├── certificados.html    # ANEXO A — arquivo completo de credenciais
-├── css/
-│   └── styles.css       # identidade visual (tokens em :root)
+portfolio/
+├── index.html               # página principal (hero + § 01 a § 09 + contato)
+├── certificados.html        # arquivo completo de certificados, com filtro, busca e modal
+├── css/styles.css           # identidade visual (tokens em :root, no topo)
 ├── js/
-│   ├── i18n.js          # idiomas (PT/EN/IT/FR): motor + dicionário da interface
-│   ├── main.js          # scramble, tarjas, filtros, contadores, reveal, typewriter
-│   └── certificados.js  # dados + filtros + busca do arquivo de certificados
-├── vercel.json          # cleanUrls + cabeçalhos de segurança
-├── .gitignore
-└── README.md
+│   ├── i18n.js              # português (no HTML) + dicionário em inglês
+│   ├── main.js              # animações, números, menu ativo, foto opcional, formulário → WhatsApp
+│   └── certificados.js      # dados dos certificados + filtros + busca + modal
+├── img/
+│   ├── og-image.png         # imagem de pré-visualização (LinkedIn, WhatsApp)
+│   └── certificados/        # imagens dos certificados
+├── curriculo/
+│   ├── curriculo.html       # fonte do currículo em português
+│   ├── resume-en.html       # fonte do currículo em inglês
+│   ├── gerar-pdf.js         # gera os dois PDFs a partir dos HTMLs
+│   ├── Gildean_Monteiro_Curriculo.pdf
+│   └── Gildean_Monteiro_Resume_EN.pdf
+└── vercel.json              # cleanUrls + cabeçalhos de segurança
 ```
 
-## Idiomas (PT · EN · IT · FR)
+## Idiomas (PT · EN)
 
-O site troca de idioma sem recarregar, lembra a escolha (localStorage) e detecta o idioma do navegador na primeira visita. Todo texto traduzível no HTML usa um atributo `data-i18n*`:
+O site abre em português. O botão **EN** da navegação troca para inglês sem recarregar, a escolha fica salva e `?lang=en` abre direto em inglês (bom para mandar a recrutadores de fora).
 
-| Atributo            | Efeito                                    |
-| ------------------- | ----------------------------------------- |
-| `data-i18n`         | troca o texto (textContent)               |
-| `data-i18n-html`    | troca conteúdo com HTML (spans, `<br>`)   |
-| `data-i18n-ph`      | troca o `placeholder`                     |
-| `data-i18n-al`      | troca o `aria-label`                      |
-| `data-i18n-secret`  | troca o texto secreto da tarja preta      |
-| `data-i18n-title`   | troca o `<title>` da aba                  |
-| `data-i18n-desc`    | troca a meta description                  |
+O texto em português é o que está escrito no HTML. Cada elemento traduzível tem uma chave:
 
-Para ajustar qualquer texto, edite a chave correspondente nos **quatro** blocos de idioma (`pt`, `en`, `it`, `fr`) dentro de `js/i18n.js`. As frases da máquina de escrever ficam no objeto `FRASES` do mesmo arquivo.
+| Atributo          | Efeito                         |
+| ----------------- | ------------------------------ |
+| `data-i18n`       | troca o conteúdo               |
+| `data-i18n-ph`    | troca o `placeholder`          |
+| `data-i18n-al`    | troca o `aria-label`           |
+| `data-i18n-href`  | troca o link (ex.: currículo)  |
+| `data-i18n-title` | troca o `<title>` da aba       |
+| `data-i18n-desc`  | troca a meta description       |
 
-### Traduzir a descrição de um certificado
+Para mudar um texto: edite o português no HTML e a mesma chave no bloco `EN` de `js/i18n.js`.
 
-No `js/certificados.js`, o campo `detalhes` aceita **string** (mesmo texto em todos os idiomas) **ou objeto** por idioma. Para traduzir, troque a string por um objeto:
+## Tarefas comuns
 
-```js
-detalhes: {
-  pt: 'Texto em português.',
-  en: 'Text in English.',
-  it: 'Testo in italiano.',
-  fr: 'Texte en français.'
-},
-```
+| O que mudar                 | Onde |
+| --------------------------- | ---- |
+| **Colocar sua foto**        | salve em `img/perfil.jpg` (3:4, ~800×1066) e preencha `data-foto="img/perfil.jpg"` no `<div class="retrato">` do `index.html`. Sem foto, aparece o monograma. |
+| Cores                       | `css/styles.css` → bloco `:root` |
+| Números da seção Sobre      | `index.html` → atributos `data-contar` |
+| Projetos                    | `index.html` → § 04, cards `<article class="projeto">` |
+| Certificados                | `js/certificados.js` → array `CREDENCIAIS` (a imagem vai em `img/certificados/`) |
+| Perguntas do FAQ            | `index.html` → § 09, blocos `<details>` |
+| Número do WhatsApp          | `js/main.js` → constante `WHATSAPP` e os links `wa.me` do `index.html` |
 
-Se um idioma faltar no objeto, o sistema usa o português automaticamente (fallback). Os campos visíveis do card — número, área, título e emissor — já se traduzem sozinhos (a área vem do dicionário).
+## Currículo em PDF
 
-Abra `js/certificados.js` e copie uma linha do array `CREDENCIAIS`:
-
-```js
-{ titulo: 'Nome do certificado', emissor: 'Instituição', area: 'java', ano: '2026', link: 'https://url-de-verificacao' },
-```
-
-Áreas válidas: `ciber` · `java` · `python-ia` · `front` · `cloud` · `redes` · `gestao` · `idiomas`. Os campos `ano`, `data`, `carga`, `detalhes` e `link` são opcionais. Para exibir a imagem do certificado, salve o JPG em `img/certificados/` e aponte no campo `img` — o card mostra a miniatura e o clique abre o modal de inspeção com a imagem em tamanho grande. Numeração, filtros, busca e contagem se ajustam sozinhos. Para criar uma área nova, adicione a chave no objeto `AREAS` do mesmo arquivo e um botão correspondente em `certificados.html`.
-
-## Deploy na Vercel
-
-### Opção 1 — pelo GitHub (recomendado)
+O currículo é escrito em HTML (coluna única, texto real: é o formato que os sistemas de triagem leem melhor) e convertido em PDF pelo Chromium:
 
 ```bash
-cd gildean-portfolio
-git init
-git add .
-git status   # confira antes de commitar
-git commit -m "feat: portfolio dossiê GM-2026"
-git branch -M main
-git remote add origin https://github.com/Everett-gi/portfolio.git
-git push -u origin main
+npm i -g playwright && npx playwright install chromium
+node curriculo/gerar-pdf.js
 ```
 
-Depois: [vercel.com/new](https://vercel.com/new) → **Import** o repositório `portfolio` → Framework Preset: **Other** → **Deploy**. Nenhuma configuração extra é necessária.
+Depois de editar `curriculo.html` ou `resume-en.html`, rode o comando e faça o commit dos PDFs junto.
 
-### Opção 2 — pela CLI
+## Deploy
 
-```bash
-npm i -g vercel
-cd gildean-portfolio
-vercel login
-vercel --prod
-```
+Push na `main` → a Vercel publica sozinha (Framework Preset: **Other**, sem configuração extra).
 
-## Personalização rápida
-
-| O que mudar          | Onde                                              |
-| -------------------- | ------------------------------------------------- |
-| Cores                | `css/styles.css` → bloco `:root` (linhas 8–25)    |
-| Projetos             | `index.html` → Seção 04, cards `<article class="ev">` |
-| Níveis de habilidade | Seção 03 → quantidade de `<i class="on">` por linha |
-| Certificados         | `index.html` → Seção 04, cards `<article class="cred">` — troque os links "↗ verificar" pelas URLs reais das credenciais quando tiver |
-| Texto da tarja preta | `index.html` → atributo `data-segredo` do botão `.redacao` |
-| Frases da máquina de escrever | `js/main.js` → array `frases`            |
-| Rótulos alternativos dos botões | `index.html` → 2º `<span>` dentro de `.rotulos` |
-| Durações no hover das datas | `index.html` → 2º `<span>` dentro de `.log-data` |
-| Velocidade da faixa  | `css/styles.css` → `.faixa-trilho` (`32s`)        |
-
-## Verificar os cabeçalhos de segurança após o deploy
+Para conferir os cabeçalhos de segurança depois do deploy:
 
 ```bash
-curl -I https://SEU-PROJETO.vercel.app | grep -iE "content-security|x-frame|strict-transport|x-content"
+curl -I https://portfolio-ten-livid-56.vercel.app | grep -iE "content-security|x-frame|strict-transport|x-content"
 ```

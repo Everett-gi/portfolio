@@ -10,7 +10,8 @@
 
   /* ---------- helpers de idioma (usam o i18n.js; caem para PT se ausente) ---------- */
   function i18nT(chave, alt) {
-    return (window.i18n && typeof window.i18n.t === 'function') ? window.i18n.t(chave) : alt;
+    var v = (window.i18n && typeof window.i18n.t === 'function') ? window.i18n.t(chave) : '';
+    return v || alt;
   }
   function idiomaAtual() {
     return (window.i18n && window.i18n.lang) ? window.i18n.lang : 'pt';
@@ -29,14 +30,14 @@
 
   /* ---------- áreas válidas e seus rótulos ---------- */
   var AREAS = {
-    'ciber':     'CIBERSEGURANÇA',
-    'java':      'JAVA & BACK-END',
-    'python-ia': 'PYTHON & IA',
-    'front':     'FRONT-END',
-    'cloud':     'CLOUD & DEVOPS',
-    'redes':     'REDES & INFRA',
-    'gestao':    'GESTÃO & SOFT SKILLS',
-    'idiomas':   'IDIOMAS'
+    'ciber':     'Cibersegurança',
+    'java':      'Java & Back-end',
+    'python-ia': 'Python & IA',
+    'front':     'Front-end',
+    'cloud':     'Cloud & DevOps',
+    'redes':     'Redes & Infra',
+    'gestao':    'Gestão & Soft skills',
+    'idiomas':   'Idiomas'
   };
 
   /* ---------- SEUS CERTIFICADOS ----------
@@ -51,6 +52,10 @@
   var CREDENCIAIS = [
 
     /* ===== CIBERSEGURANÇA ===== */
+    { titulo: 'Formação em Cibersegurança — Hackers do Bem', emissor: 'MCTI / RNP', area: 'ciber', ano: '2026',
+      data: 'desde 04/2026', carga: 'Em andamento', capa: 'Hackers do Bem',
+      detalhes: { pt: 'Programa nacional de formação em segurança cibernética do Ministério da Ciência, Tecnologia e Inovação (MCTI), executado pela Rede Nacional de Ensino e Pesquisa (RNP). A formação começa pelos cursos de nivelamento e básico e segue para os níveis fundamental e especializado, com aulas ao vivo e atividades práticas. Em andamento desde abril de 2026.', en: 'National cybersecurity training program of the Brazilian Ministry of Science, Technology and Innovation (MCTI), run by the National Education and Research Network (RNP). It starts with the leveling and basic courses and moves on to the fundamental and specialized levels, with live classes and hands-on activities. In progress since April 2026.' }, link: 'https://hackersdobem.org.br/' },
+
     { titulo: 'Ethical Hacking & Cybersecurity — Certificação Final', emissor: 'HackerX', area: 'ciber', ano: '2026',
       data: '02/03/2026', carga: 'Trilha completa', img: 'img/certificados/hackerx-final.jpg',
       detalhes: { pt: 'Certificação final do programa de Ethical Hacking & Cybersecurity da HackerX, atestando a conclusão de todos os cursos da trilha e a aprovação no teste de conhecimento do domínio. A trilha cobre redes e protocolos (TCP/IP, DNS, HTTP/HTTPS), OSINT, análise de vulnerabilidades, Pentest web (OWASP Top 10) e criptografia. Certificate ID: 0b2e417953aa451.', en: 'Final certification of HackerX\'s Ethical Hacking & Cybersecurity program, attesting completion of every course in the track and passing the domain knowledge test. The track covers networks and protocols (TCP/IP, DNS, HTTP/HTTPS), OSINT, vulnerability analysis, web pentesting (OWASP Top 10) and cryptography. Certificate ID: 0b2e417953aa451.', it: 'Certificazione finale del programma Ethical Hacking & Cybersecurity di HackerX, che attesta il completamento di tutti i corsi del percorso e il superamento del test di conoscenza del dominio. Il percorso copre reti e protocolli (TCP/IP, DNS, HTTP/HTTPS), OSINT, analisi delle vulnerabilità, pentest web (OWASP Top 10) e crittografia. Certificate ID: 0b2e417953aa451.', fr: 'Certification finale du programme Ethical Hacking & Cybersecurity de HackerX, attestant l\'achèvement de tous les cours du parcours et la réussite du test de connaissances du domaine. Le parcours couvre les réseaux et protocoles (TCP/IP, DNS, HTTP/HTTPS), l\'OSINT, l\'analyse de vulnérabilités, le pentest web (OWASP Top 10) et la cryptographie. Certificate ID: 0b2e417953aa451.' }, link: '' },
@@ -247,7 +252,7 @@
 
   function abrirModal(cred, indice) {
     if (!temDialog) return;
-    mNum.textContent = 'CRED-' + String(indice + 1).padStart(3, '0');
+    mNum.textContent = 'Nº ' + String(indice + 1).padStart(2, '0');
     mArea.textContent = rotuloArea(cred.area);
     mTitulo.textContent = cred.titulo;
 
@@ -256,7 +261,7 @@
     if (cred.carga) meta.push(cred.carga);
     mMeta.textContent = meta.join('  ·  ');
 
-    mDetalhes.textContent = textoDetalhe(cred) || i18nT('modal.noDetails', 'Detalhes ainda não catalogados para esta credencial.');
+    mDetalhes.textContent = textoDetalhe(cred) || i18nT('modal.noDetails', 'Detalhes ainda não catalogados para este certificado.');
 
     if (cred.img) {
       mImg.src = cred.img;
@@ -306,7 +311,7 @@
       thumb.appendChild(im);
     } else {
       thumb.classList.add('sem-img');
-      thumb.textContent = i18nT('card.noImg', '// imagem não anexada');
+      thumb.textContent = cred.capa || i18nT('card.noImg', 'em andamento');
     }
 
     var corpo = document.createElement('div');
@@ -317,7 +322,7 @@
 
     var num = document.createElement('span');
     num.className = 'acred-num';
-    num.textContent = 'CRED-' + String(indice + 1).padStart(3, '0');
+    num.textContent = 'Nº ' + String(indice + 1).padStart(2, '0');
 
     var area = document.createElement('span');
     area.className = 'acred-area';
@@ -335,7 +340,7 @@
 
     var ver = document.createElement('span');
     ver.className = 'acred-ver';
-    ver.textContent = i18nT('card.inspect', '↗ inspecionar');
+    ver.textContent = i18nT('card.inspect', 'Ver certificado →');
 
     corpo.appendChild(topo);
     corpo.appendChild(titulo);
@@ -373,7 +378,7 @@
     });
 
     vazio.hidden = visiveis > 0;
-    var tpl = i18nT('arch.count', 'exibindo {n} de {total} registros');
+    var tpl = i18nT('arch.count', 'exibindo {n} de {total} certificados');
     contagem.textContent = tpl.replace('{n}', visiveis).replace('{total}', CREDENCIAIS.length);
   }
 
