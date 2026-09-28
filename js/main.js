@@ -12,7 +12,7 @@
   var raiz = document.documentElement;
   raiz.classList.add('js');
   var semAnimacao = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-  var WHATSAPP = '5511982953630';
+  var WHATSAPP = '5524981312273';
 
   function idioma() { return (window.i18n && window.i18n.lang) || 'pt'; }
   function texto(chave, alt) {

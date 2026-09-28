@@ -56,7 +56,7 @@ Para mudar um texto: edite o português no HTML e a mesma chave no bloco `EN` de
 | Projetos                    | `index.html` → § 04, cards `<article class="projeto">` |
 | Certificados                | `js/certificados.js` → array `CREDENCIAIS` (a imagem vai em `img/certificados/`) |
 | Perguntas do FAQ            | `index.html` → § 09, blocos `<details>` |
-| Número do WhatsApp          | `js/main.js` → constante `WHATSAPP` e os links `wa.me` do `index.html` |
+| Número do WhatsApp          | `js/main.js` → constante `WHATSAPP`, os links `wa.me` do `index.html` e `s1.whatsHref` em `js/i18n.js` (hoje: WhatsApp (24) 98131-2273, ligações (11) 98295-3630) |
 
 ## Currículo em PDF
 

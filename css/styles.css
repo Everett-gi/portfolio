@@ -234,6 +234,7 @@ strong { color: var(--ink); font-weight: 500; }
 .etiqueta-dev { color: #f2c46d; background: rgba(242, 196, 109, .08); border-color: rgba(242, 196, 109, .25); }
 .etiqueta-estudo { color: var(--ink-2); background: rgba(245, 236, 226, .04); border-color: var(--line-2); }
 .projeto-nota { font-family: var(--font-mono); font-size: 11px; color: var(--mint-2); }
+.projeto-nota.projeto-off { color: var(--muted); }
 .projeto h3 { font-size: 22px; font-weight: 500; letter-spacing: -0.02em; margin-bottom: 12px; }
 .projeto > p { font-size: 14.5px; color: var(--muted); line-height: 1.65; margin-bottom: 18px; }
 .tags { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 10px; }

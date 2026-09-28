@@ -32,7 +32,7 @@
   var EN = {
     /* meta e navegação */
     'meta.title': 'Gildean Monteiro · Junior Full Stack Developer (Java, Spring Boot, Cloud & Security)',
-    'meta.desc': 'Portfolio of Gildean Monteiro, a junior full stack developer in Petrópolis, Brazil. Java 21, Spring Boot, PostgreSQL, Docker, Oracle Cloud and cybersecurity, with two systems in production. Open to internships and junior roles.',
+    'meta.desc': 'Portfolio of Gildean Monteiro, a junior full stack developer in Petrópolis, Brazil. Java 21, Spring Boot, PostgreSQL, Docker, Oracle Cloud and cybersecurity, with a production platform used by 80+ students. Open to internships and junior roles.',
     'skip': 'Skip to content',
     'nav.aria': 'Main navigation', 'nav.inicio': 'Home', 'nav.sobre': 'About', 'nav.habilidades': 'Skills', 'nav.projetos': 'Projects',
     'nav.trajetoria': 'Journey', 'nav.faq': 'FAQ', 'nav.lang': 'PT', 'nav.langAria': 'Ver em português', 'nav.cta': 'Get in touch',
@@ -45,9 +45,9 @@
     'hero.h1': 'Full Stack Developer who builds, <em>secures</em> and keeps real systems running.',
     'hero.bio': 'IT student at FAETERJ and owner of <strong>Hub Atlética Dragões</strong>, a production platform built with Java 21, Spring Boot, PostgreSQL and <strong>1,275 automated tests</strong>. Certified in <strong>Ethical Hacking</strong> and training in the <strong>Hackers do Bem</strong> program. Looking for an internship or junior role to add value to a team and learn fast.',
     'hero.cta1': 'Download resume (PDF)', 'hero.cvHref': 'curriculo/Gildean_Monteiro_Resume_EN.pdf',
-    'hero.cta2': 'See systems in production',
+    'hero.cta2': 'See projects',
     'hero.fotoAlt': 'Photo of Gildean Monteiro',
-    'hero.chip1': 'Java 21 · Spring Boot', 'hero.chip2': '2 systems in production', 'hero.chip3': 'Ethical Hacking · HackerX',
+    'hero.chip1': 'Java 21 · Spring Boot', 'hero.chip2': 'Live system · 80+ users', 'hero.chip3': 'Ethical Hacking · HackerX',
     'hero.marqueeAria': 'Technologies',
     'inst.label': 'Education and certifications from',
 
@@ -62,8 +62,8 @@
     's1.k1': 'Goal', 's1.v1': 'Internship or Junior Dev', 's1.k2': 'Location', 's1.k3': 'Work model', 's1.v3': 'On-site · Hybrid · Remote',
     's1.k4': 'Education', 's1.v4': 'IT · FAETERJ (ongoing)', 's1.k5': 'Main stack', 's1.k6': 'Languages', 's1.v6': 'Portuguese native · English C2',
     's1.v7': 'Available for interviews', 's1.whats': 'Chat on WhatsApp',
-    's1.whatsHref': 'https://wa.me/5511982953630?text=Hi%2C%20Gildean!%20I%20saw%20your%20portfolio%20and%20would%20like%20to%20talk.',
-    'm1': 'systems in production', 'm2': 'automated tests in the Hub', 'm3': 'IT certificates', 'm4': 'customers a day led',
+    's1.whatsHref': 'https://wa.me/5524981312273?text=Hi%2C%20Gildean!%20I%20saw%20your%20portfolio%20and%20would%20like%20to%20talk.',
+    'm1': 'active accounts in the Hub', 'm2': 'automated tests in the Hub', 'm3': 'IT certificates', 'm4': 'customers a day led',
 
     /* § 02 */
     's2.label': 'Who this profile is for',
@@ -96,14 +96,13 @@
 
     /* § 04 */
     's4.label': 'Projects',
-    's4.title': 'Systems in production, <em>not just exercises</em>',
-    's4.sub': "A sample of what I've built and keep running.",
+    's4.title': 'Real projects, <em>not just exercises</em>',
+    's4.sub': "A sample of what I've built and shipped.",
     'p1.tag': 'Platform in production', 'p1.note': '80+ accounts',
     'p1.d': "FAETERJ IT students' web platform: grades and pass simulator, class schedule, study content, student ID with a verifiable QR code, room booking, e-sports and an AI assistant.",
     'p1.link': 'See it live ↗',
-    'p2.tag': 'Personal project', 'p2.note': 'live',
-    'p2.d': 'Pop culture review platform (movies, series, games, books, albums and comics) with JWT authentication, Flyway migrations and LGPD-compliant terms acceptance.',
-    'p2.link': 'See it live ↗',
+    'p2.tag': 'Personal project', 'p2.note': 'currently offline',
+    'p2.d': 'Pop culture review platform (movies, series, games, books, albums and comics) with JWT authentication, Flyway migrations and LGPD-compliant terms acceptance. I deployed it on Oracle Cloud with Docker Compose and Caddy in 2025.',
     'p3.tag': 'This website', 'p3.t': 'Portfolio',
     'p3.d': 'Plain HTML, CSS and JavaScript with no dependencies or build step, in Portuguese and English, with security headers (CSP, HSTS, X-Frame-Options) set on Vercel.',
     'p3.link': 'See the code ↗',
@@ -176,7 +175,7 @@
     'q2': "What's your availability?",
     'a2': 'I live in Petrópolis (RJ, Brazil) and can work on-site, hybrid or remote. I balance work with my degree at FAETERJ; we can agree on hours in the interview.',
     'q3': 'Have you worked in IT professionally?',
-    'a3': 'Not yet in a formal IT position. My technical experience comes from the two systems I built and run in production, the Serratec residency and my certifications. Professionally, I bring 6+ years of customer service and leadership, including two years as assistant manager.',
+    'a3': 'Not yet in a formal IT position. My technical experience comes from Hub Atlética Dragões, which I built and run in production, personal projects such as OmniRate, the Serratec residency and my certifications. Professionally, I bring 6+ years of customer service and leadership, including two years as assistant manager.',
     'q4': 'Can I see the Hub’s code?',
     'a4': 'The repository is private because the system stores real students’ data. The site is live at atleticadragoes.com.br, with a visitor mode that needs no login, and I present the architecture, the code and the admin panel in a call or technical interview. This portfolio’s code is public on GitHub.',
     'q5': 'How do you use AI in development?',
@@ -193,11 +192,11 @@
     'f.obs': 'Nothing is stored on this site: the form only builds the message and opens WhatsApp.',
     'f.whatsIntro': 'Hi, Gildean! I saw your portfolio and would like to talk.',
     'f.whatsNome': 'Name', 'f.whatsEmpresa': 'Company', 'f.whatsMsg': 'Message',
-    'ch1': 'Fastest reply', 'ch5r': 'Resume', 'ch5': 'Download PDF',
+    'ch1': '+55 24 98131-2273 · fastest reply', 'ch6r': 'Phone', 'ch6': '+55 11 98295-3630 · calls', 'ch5r': 'Resume', 'ch5': 'Download PDF',
 
     /* rodapé e celular */
     'ft.sub': 'Full Stack Developer · Petrópolis, Brazil', 'ft.nav': 'Navigation', 'ft.proj': 'Projects and credentials',
-    'ft.certs': 'All certificates', 'ft.resumeEn': 'Currículo em português (PDF)', 'ft.ct': 'Contact',
+    'ft.certs': 'All certificates', 'ft.tel': 'Calls +55 11 98295-3630', 'ft.resumeEn': 'Currículo em português (PDF)', 'ft.ct': 'Contact',
     'ft.base': '© 2026 Gildean Monteiro do Nascimento · Handmade with HTML, CSS and JavaScript, no cookies and no trackers.',
     'mob.whats': 'WhatsApp', 'mob.cv': 'Resume',
 
